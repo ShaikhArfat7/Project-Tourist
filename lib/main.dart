@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'core/services/firebase_user_service.dart';
+import 'core/services/notification_service.dart';
 import 'core/theme/app_theme.dart';
 import 'screens/home_screen.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await NotificationService().initialize();
+  await FirebaseUserService().initializeFirebase();
   runApp(const TouristSafetyApp());
 }
 

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "dz_marine_drive_high_tide",
+    "name": "Marine Drive & Nariman Point Promenade",
+    "city": "Mumbai",
+    "latitude": 18.9432,
+    "longitude": 72.8235,
+    "radiusMeters": 600,
+    "riskLevel": "CAUTION",
+    "dataCategory": "GENERAL_SAFETY_ADVISORY",
+    "source": "General Coastal & Monsoon Safety Precaution (BMC / Mumbai Police Advisory)",
+    "hazardType": "Coastal High-Tide & Monsoon Wave Zone",
+    "warningMessage": "High waves frequently crash over the sea wall during high tide and monsoon swells. Avoid sitting on tetrapods or standing near the promenade edge during rough seas.",
+    "recommendedAction": "Remain on the inner pedestrian walkway and follow local coastal police barricades."
+  },
+  {
+    "id": "dz_lion_point_cliff",
+    "name": "Lion's Point & Tiger Point Cliff Edge",
+    "city": "Lonavala",
+    "latitude": 18.6989,
+    "longitude": 73.3894,
+    "radiusMeters": 800,
+    "riskLevel": "HIGH_RISK",
+    "dataCategory": "GENERAL_SAFETY_ADVISORY",
+    "source": "General Western Ghats Terrain Precaution (Pune Rural Tourist Guidance)",
+    "hazardType": "Steep Unfenced Valley Drop & Dense Fog Zone",
+    "warningMessage": "Steep cliff-edge drop with slippery basalt rocks and sudden low-visibility fog, particularly during the monsoon and evening hours.",
+    "recommendedAction": "Stay behind safety railings, avoid cliff-edge photography, and return before sunset."
+  },
+  {
+    "id": "dz_arthur_seat_gorge",
+    "name": "Arthur's Seat Savitri Gorge",
+    "city": "Mahabaleshwar",
+    "latitude": 17.9711,
+    "longitude": 73.6331,
+    "radiusMeters": 750,
+    "riskLevel": "HIGH_RISK",
+    "dataCategory": "GENERAL_SAFETY_ADVISORY",
+    "source": "General Hill-Station Terrain Precaution (Satara District Tourist Guidance)",
+    "hazardType": "Deep Gorge & Landslide-Prone Ghat",
+    "warningMessage": "Steep drop into the Savitri Valley with strong crosswinds and potential rockfall on approach ghat roads during heavy rain.",
+    "recommendedAction": "Remain within fenced viewing platforms and check IMD ghat weather advisories before travel."
+  },
+  {
+    "id": "dz_baga_calangute_rip_current",
+    "name": "Baga–Calangute Coastal Stretch",
+    "city": "Goa",
+    "latitude": 15.5553,
+    "longitude": 73.7517,
+    "radiusMeters": 900,
+    "riskLevel": "CAUTION",
+    "dataCategory": "GENERAL_SAFETY_ADVISORY",
+    "source": "General Beach Safety Guidance (Goa Tourism / Lifeguard Precaution)",
+    "hazardType": "Seasonal Undertow & Rip Currents",
+    "warningMessage": "Offshore rip currents can occur along this coastal belt. Entering the sea after dusk or in red-flagged zones is hazardous.",
+    "recommendedAction": "Swim only between yellow-and-red lifeguard flags during daylight hours."
+  },
+  {
+    "id": "dz_brahmagiri_ghat_trail",
+    "name": "Brahmagiri Mountain Steep Steps",
+    "city": "Nashik",
+    "latitude": 19.9270,
+    "longitude": 73.5260,
+    "radiusMeters": 700,
+    "riskLevel": "CAUTION",
+    "dataCategory": "GENERAL_SAFETY_ADVISORY",
+    "source": "General Trekking & Pilgrim Trail Precaution",
+    "hazardType": "Steep Rock-Cut Steps & Slippery Trail",
+    "warningMessage": "Narrow vertical rock-cut steps become slippery during rain and fog.",
+    "recommendedAction": "Hold handrails firmly, wear grippy footwear, and avoid solo trekking after 5:30 PM."
+  }
+]

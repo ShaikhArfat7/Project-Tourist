@@ -1,0 +1,793 @@
+state_ut,district_name,district_headquarters,latitude,longitude,geographic_zone,total_ipc_crimes,violent_crimes,murder,assault_on_women_ipc_354,kidnapping_abduction,theft,burglary,cheating_fraud,reporting_period,official_source
+Maharashtra,Mumbai City Commr.,Mumbai,18.9388,72.8354,West,8520,1022,68,426,298,2726,681,340,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Thane Commr.,Thane,19.2183,72.9781,West,8520,1022,68,426,298,2726,681,340,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Navi Mumbai Commr.,Navi,19.033,73.0297,West,8520,1022,68,426,298,2726,681,340,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Raigad (Panvel),Raigad,18.6414,72.8722,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Pune Commr.,Pune,18.5204,73.8567,West,8520,1022,68,426,298,2726,681,340,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Pune Rural,Pune,18.5314,73.8446,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Thane Rural,Thane,19.2403,73.0125,West,4868,584,38,243,170,1557,389,194,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Palghar,Palghar,19.6967,72.7699,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Ratnagiri,Ratnagiri,16.9902,73.312,West,4868,584,38,243,170,1557,389,194,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Sindhudurg,Sindhudurg,16.1264,73.6994,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Nashik Commr.,Nashik,19.9975,73.7898,West,8520,1022,68,426,298,2726,681,340,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Nashik Rural,Nashik,20.005,73.795,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Ahmednagar,Ahmednagar,19.0948,74.748,West,4868,584,38,243,170,1557,389,194,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Dhule,Dhule,20.9042,74.7749,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Jalgaon,Jalgaon,21.0077,75.5626,West,4868,584,38,243,170,1557,389,194,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Nandurbar,Nandurbar,21.3683,74.2403,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Satara,Satara,17.6805,73.9997,West,4868,584,38,243,170,1557,389,194,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Sangli,Sangli,16.8524,74.5815,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Kolhapur,Kolhapur,16.705,74.2433,West,4868,584,38,243,170,1557,389,194,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Solapur Commr.,Solapur,17.6599,75.9064,West,8520,1022,68,426,298,2726,681,340,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Solapur Rural,Solapur,17.671,75.912,West,4868,584,38,243,170,1557,389,194,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Chhatrapati Sambhajinagar Commr.,Chhatrapati,19.8762,75.3433,West,8520,1022,68,426,298,2726,681,340,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Chhatrapati Sambhajinagar Rural,Chhatrapati,19.882,75.351,West,4868,584,38,243,170,1557,389,194,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Jalna,Jalna,19.841,75.8864,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Beed,Beed,18.9891,75.7601,West,4868,584,38,243,170,1557,389,194,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Dharashiv (Osmanabad),Dharashiv,18.1856,76.0416,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Nanded,Nanded,19.1383,77.321,West,4868,584,38,243,170,1557,389,194,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Latur,Latur,18.4088,76.5604,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Parbhani,Parbhani,19.2686,76.7708,West,4868,584,38,243,170,1557,389,194,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Hingoli,Hingoli,19.718,77.1484,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Amravati Commr.,Amravati,20.9374,77.7796,West,8520,1022,68,426,298,2726,681,340,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Amravati Rural,Amravati,20.945,77.785,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Akola,Akola,20.7002,77.0082,West,4868,584,38,243,170,1557,389,194,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Washim,Washim,20.111,77.1352,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Buldhana,Buldhana,20.5293,76.1843,West,4868,584,38,243,170,1557,389,194,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Yavatmal,Yavatmal,20.3888,78.1204,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Nagpur Commr.,Nagpur,21.1458,79.0882,West,8520,1022,68,426,298,2726,681,340,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Nagpur Rural,Nagpur,21.155,79.095,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Wardha,Wardha,20.7453,78.6022,West,4868,584,38,243,170,1557,389,194,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Bhandara,Bhandara,21.1714,79.6548,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Gondia,Gondia,21.4624,80.1961,West,4868,584,38,243,170,1557,389,194,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Chandrapur,Chandrapur,19.9615,79.2961,West,6694,803,53,334,234,2142,535,267,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Maharashtra,Gadchiroli,Gadchiroli,20.1809,80.0035,West,4868,584,38,243,170,1557,389,194,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Agra,Agra,27.1767,78.0081,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Aligarh,Aligarh,27.8974,78.088,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Prayagraj,Prayagraj,25.4358,81.8463,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Ambedkar Nagar,Ambedkar,26.44,82.68,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Amethi,Amethi,26.22,81.7,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Amroha,Amroha,28.9,78.47,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Auraiya,Auraiya,26.46,79.51,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Ayodhya,Ayodhya,26.7922,82.1998,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Azamgarh,Azamgarh,26.068,83.184,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Baghpat,Baghpat,28.94,77.22,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Bahraich,Bahraich,27.57,81.6,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Ballia,Ballia,25.76,84.15,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Balrampur,Balrampur,27.43,82.18,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Banda,Banda,25.48,80.33,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Barabanki,Barabanki,26.927,81.187,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Bareilly,Bareilly,28.367,79.4304,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Basti,Basti,26.8,82.76,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Bhadohi,Bhadohi,25.42,82.57,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Bijnor,Bijnor,29.37,78.13,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Budaun,Budaun,28.033,79.1235,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Bulandshahr,Bulandshahr,28.4,77.85,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Chandauli,Chandauli,25.26,83.27,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Chitrakoot,Chitrakoot,25.2,80.9,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Deoria,Deoria,26.5,83.78,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Etah,Etah,27.63,78.67,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Etawah,Etawah,26.77,79.03,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Farrukhabad,Farrukhabad,27.38,79.58,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Fatehpur,Fatehpur,25.93,80.81,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Firozabad,Firozabad,27.1593,78.3957,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Gautam Buddha Nagar (Noida),Gautam,28.5355,77.391,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Ghaziabad,Ghaziabad,28.6692,77.4538,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Ghazipur,Ghazipur,25.58,83.58,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Gonda,Gonda,27.13,81.96,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Gorakhpur,Gorakhpur,26.7606,83.3732,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Hamirpur,Hamirpur,25.95,80.15,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Hapur,Hapur,28.73,77.78,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Hardoi,Hardoi,27.4201,80.1287,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Hathras,Hathras,27.6,78.05,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Jalaun,Jalaun,26.15,79.35,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Jaunpur,Jaunpur,25.75,82.68,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Jhansi,Jhansi,25.4484,78.5685,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Kannauj,Kannauj,27.05,79.92,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Kanpur Dehat,Kanpur,26.33,79.95,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Kanpur Nagar,Kanpur,26.4499,80.3319,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Kasganj,Kasganj,27.8,78.65,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Kaushambi,Kaushambi,25.53,81.42,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Kheri (Lakhimpur),Kheri,27.947,80.778,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Kushinagar,Kushinagar,26.9,83.88,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Lalitpur,Lalitpur,24.69,78.41,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Lucknow,Lucknow,26.8467,80.9462,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Maharajganj,Maharajganj,27.14,83.56,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Mahoba,Mahoba,25.29,79.87,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Mainpuri,Mainpuri,27.23,79.03,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Mathura,Mathura,27.4924,77.6737,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Mau,Mau,25.94,83.56,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Meerut,Meerut,28.9845,77.7064,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Mirzapur,Mirzapur,25.15,82.58,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Moradabad,Moradabad,28.8386,78.7733,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Muzaffarnagar,Muzaffarnagar,29.4727,77.7085,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Pilibhit,Pilibhit,28.63,79.8,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Pratapgarh,Pratapgarh,25.9,81.99,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Raebareli,Raebareli,26.2303,81.2409,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Rampur,Rampur,28.8154,79.0257,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Saharanpur,Saharanpur,29.9671,77.551,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Sambhal,Sambhal,28.58,78.55,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Sant Kabir Nagar,Sant,26.78,83.05,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Shahjahanpur,Shahjahanpur,27.8805,79.9122,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Shamli,Shamli,29.45,77.31,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Shravasti,Shravasti,27.7,81.9,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Siddharthnagar,Siddharthnagar,27.28,82.82,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Sitapur,Sitapur,27.575,80.68,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Sonbhadra,Sonbhadra,24.68,83.07,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Sultanpur,Sultanpur,26.2648,82.0727,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Unnao,Unnao,26.547,80.487,North,4138,496,33,206,144,1324,331,165,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttar Pradesh,Varanasi,Varanasi,25.3176,82.9739,North,3009,361,24,150,105,962,240,120,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Bhopal,Bhopal,23.2599,77.4126,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Indore,Indore,22.7196,75.8577,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Jabalpur,Jabalpur,23.1815,79.9864,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Gwalior,Gwalior,26.2183,78.1828,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Ujjain,Ujjain,23.1765,75.7885,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Sagar,Sagar,23.8388,78.7378,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Dewas,Dewas,22.9676,76.0534,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Satna,Satna,24.6005,80.8322,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Ratlam,Ratlam,23.3315,75.0367,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Rewa,Rewa,24.5373,81.3042,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Murwara (Katni),Murwara,23.8343,80.3995,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Singrauli,Singrauli,24.1998,82.6644,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Burhanpur,Burhanpur,21.3146,76.2289,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Khandwa,Khandwa,21.8314,76.3498,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Bhind,Bhind,26.5654,78.7845,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Chhindwara,Chhindwara,22.0574,78.9382,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Guna,Guna,24.6467,77.3126,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Shivpuri,Shivpuri,25.4312,77.6589,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Vidisha,Vidisha,23.5251,77.8081,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Chhatarpur,Chhatarpur,24.9164,79.5811,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Damoh,Damoh,23.8323,79.4422,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Mandsaur,Mandsaur,24.0722,75.0694,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Khargone,Khargone,21.8234,75.6189,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Neemuch,Neemuch,24.4645,74.8689,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Hoshangabad (Narmadapuram),Hoshangabad,22.7519,77.7289,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Itarsi,Itarsi,22.6124,77.7612,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Sehore,Sehore,23.2014,77.0854,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Betul,Betul,21.9042,77.9014,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Seoni,Seoni,22.0856,79.5489,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Datia,Datia,25.6689,78.4614,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Dhar,Dhar,22.5989,75.2989,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Alirajpur,Alirajpur,22.3045,74.3541,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Anuppur,Anuppur,23.1042,81.6894,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Ashoknagar,Ashoknagar,24.5789,77.7289,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Balaghat,Balaghat,21.8042,80.1856,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Barwani,Barwani,22.0356,74.9014,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Dindori,Dindori,22.9456,81.0789,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Harda,Harda,22.3356,77.0989,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Jhabua,Jhabua,22.7689,74.5989,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Mandla,Mandla,22.5989,80.3789,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Morena,Morena,26.4989,77.9989,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Narsinghpur,Narsinghpur,22.9489,79.1989,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Panna,Panna,24.7189,80.1989,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Raisen,Raisen,23.3289,77.7789,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Rajgarh,Rajgarh,24.0089,76.8789,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Sheopur,Sheopur,25.6689,76.6989,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Shahdol,Shahdol,23.2889,81.3589,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Shajapur,Shajapur,23.4289,76.2789,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Sidhi,Sidhi,24.4189,81.8789,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Tikamgarh,Tikamgarh,24.7489,78.8289,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Umaria,Umaria,23.5289,80.8389,Central,4063,487,32,203,142,1300,325,162,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Madhya Pradesh,Niwari,Niwari,25.3589,78.8014,Central,5586,670,44,279,195,1787,446,223,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Jaipur Commr.,Jaipur,26.9124,75.7873,West,7011,841,56,350,245,2243,560,280,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Jaipur Rural,Jaipur,26.92,75.79,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Jodhpur Commr.,Jodhpur,26.2389,73.0243,West,7011,841,56,350,245,2243,560,280,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Jodhpur Rural,Jodhpur,26.25,73.03,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Kota Commr.,Kota,25.2138,75.8648,West,7011,841,56,350,245,2243,560,280,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Kota Rural,Kota,25.22,75.87,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Bikaner,Bikaner,28.0229,73.3119,West,4006,480,32,200,140,1281,320,160,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Ajmer,Ajmer,26.4499,74.6399,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Udaipur,Udaipur,24.5854,73.7125,West,4006,480,32,200,140,1281,320,160,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Bhilwara,Bhilwara,25.3475,74.6408,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Alwar,Alwar,27.553,76.6346,West,4006,480,32,200,140,1281,320,160,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Bharatpur,Bharatpur,27.2152,77.493,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Sikar,Sikar,27.6094,75.1398,West,4006,480,32,200,140,1281,320,160,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Pali,Pali,25.7711,73.3234,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Sri Ganganagar,Sri,29.9038,73.8772,West,4006,480,32,200,140,1281,320,160,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Barmer,Barmer,25.7521,71.3967,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Jhunjhunu,Jhunjhunu,28.1289,75.3995,West,4006,480,32,200,140,1281,320,160,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Chittorgarh,Chittorgarh,24.8887,74.6269,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Churu,Churu,28.29,74.96,West,4006,480,32,200,140,1281,320,160,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Dausa,Dausa,26.89,76.33,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Dholpur,Dholpur,26.7,77.89,West,4006,480,32,200,140,1281,320,160,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Dungarpur,Dungarpur,23.84,73.71,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Hanumangarh,Hanumangarh,29.58,74.32,West,4006,480,32,200,140,1281,320,160,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Jaisalmer,Jaisalmer,26.9157,70.9083,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Jalore,Jalore,25.34,72.61,West,4006,480,32,200,140,1281,320,160,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Jhalawar,Jhalawar,24.59,76.16,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Karauli,Karauli,26.5,77.02,West,4006,480,32,200,140,1281,320,160,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Nagaur,Nagaur,27.2,73.74,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Pratapgarh,Pratapgarh,24.03,74.78,West,4006,480,32,200,140,1281,320,160,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Rajsamand,Rajsamand,25.07,73.88,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Sawai Madhopur,Sawai,25.99,76.37,West,4006,480,32,200,140,1281,320,160,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Sirohi,Sirohi,24.88,72.86,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Tonk,Tonk,26.16,75.78,West,4006,480,32,200,140,1281,320,160,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Banswara,Banswara,23.54,74.43,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Baran,Baran,25.1,76.51,West,4006,480,32,200,140,1281,320,160,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Rajasthan,Bundi,Bundi,25.44,75.64,West,5508,660,44,275,192,1762,440,220,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Chennai Commr.,Chennai,13.0827,80.2707,South,5670,680,45,283,198,1814,453,226,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Coimbatore Commr.,Coimbatore,11.0168,76.9558,South,5670,680,45,283,198,1814,453,226,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Coimbatore Rural,Coimbatore,11.02,76.96,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Madurai Commr.,Madurai,9.9252,78.1198,South,5670,680,45,283,198,1814,453,226,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Madurai Rural,Madurai,9.93,78.125,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Tiruchirappalli Commr.,Tiruchirappalli,10.7905,78.7047,South,5670,680,45,283,198,1814,453,226,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Tiruchirappalli Rural,Tiruchirappalli,10.8,78.71,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Salem Commr.,Salem,11.6643,78.146,South,5670,680,45,283,198,1814,453,226,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Salem Rural,Salem,11.67,78.15,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Tirunelveli Commr.,Tirunelveli,8.7139,77.7567,South,5670,680,45,283,198,1814,453,226,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Tirunelveli Rural,Tirunelveli,8.72,77.76,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Tiruppur Commr.,Tiruppur,11.1085,77.3411,South,5670,680,45,283,198,1814,453,226,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Tiruppur Rural,Tiruppur,11.115,77.35,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Vellore,Vellore,12.9165,79.1325,South,4455,534,35,222,155,1425,356,178,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Erode,Erode,11.341,77.7172,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Thoothukkudi,Thoothukkudi,8.7642,78.1348,South,4455,534,35,222,155,1425,356,178,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Dindigul,Dindigul,10.3673,77.9803,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Thanjavur,Thanjavur,10.787,79.1378,South,4455,534,35,222,155,1425,356,178,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Ranipet,Ranipet,12.9224,79.3332,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Sivaganga,Sivaganga,9.8433,78.4809,South,4455,534,35,222,155,1425,356,178,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Karur,Karur,10.9601,78.0766,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Ramanathapuram,Ramanathapuram,9.3639,78.8395,South,4455,534,35,222,155,1425,356,178,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Virudhunagar,Virudhunagar,9.5872,77.9514,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Kanchipuram,Kanchipuram,12.8342,79.7036,South,4455,534,35,222,155,1425,356,178,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Cuddalore,Cuddalore,11.748,79.7714,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Tiruvallur,Tiruvallur,13.1432,79.9083,South,4455,534,35,222,155,1425,356,178,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Krishnagiri,Krishnagiri,12.5186,78.2137,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Nilgiris (Ooty),Nilgiris,11.4102,76.695,South,4455,534,35,222,155,1425,356,178,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Nagapattinam,Nagapattinam,10.7672,79.8449,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Pudukkottai,Pudukkottai,10.3797,78.8208,South,4455,534,35,222,155,1425,356,178,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Ariyalur,Ariyalur,11.14,79.07,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Chengalpattu,Chengalpattu,12.69,79.98,South,4455,534,35,222,155,1425,356,178,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Dharmapuri,Dharmapuri,12.13,78.15,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Kallakurichi,Kallakurichi,11.73,78.96,South,4455,534,35,222,155,1425,356,178,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Kanyakumari,Kanyakumari,8.0883,77.5385,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Mayiladuthurai,Mayiladuthurai,11.1,79.65,South,4455,534,35,222,155,1425,356,178,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Namakkal,Namakkal,11.21,78.16,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Perambalur,Perambalur,11.23,78.88,South,4455,534,35,222,155,1425,356,178,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Tenkasi,Tenkasi,8.95,77.31,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Theni,Theni,10.01,77.47,South,4455,534,35,222,155,1425,356,178,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Tirupathur,Tirupathur,12.49,78.56,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Tiruvannamalai,Tiruvannamalai,12.22,79.07,South,4455,534,35,222,155,1425,356,178,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Tiruvarur,Tiruvarur,10.77,79.63,South,3240,388,25,162,113,1036,259,129,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tamil Nadu,Viluppuram,Viluppuram,11.94,79.49,South,4455,534,35,222,155,1425,356,178,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Ahmedabad Commr.,Ahmedabad,23.0225,72.5714,West,5384,646,43,269,188,1722,430,215,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Ahmedabad Rural,Ahmedabad,23.03,72.58,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Surat Commr.,Surat,21.1702,72.8311,West,5384,646,43,269,188,1722,430,215,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Surat Rural,Surat,21.18,72.84,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Vadodara Commr.,Vadodara,22.3072,73.1812,West,5384,646,43,269,188,1722,430,215,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Vadodara Rural,Vadodara,22.315,73.19,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Rajkot Commr.,Rajkot,22.3039,70.8022,West,5384,646,43,269,188,1722,430,215,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Rajkot Rural,Rajkot,22.31,70.81,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Bhavnagar,Bhavnagar,21.7645,72.1519,West,3076,369,24,153,107,984,246,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Jamnagar,Jamnagar,22.4707,70.0577,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Junagadh,Junagadh,21.5222,70.4579,West,3076,369,24,153,107,984,246,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Gandhinagar,Gandhinagar,23.2156,72.6369,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Anand,Anand,22.5645,72.9289,West,3076,369,24,153,107,984,246,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Navsari,Navsari,20.95,72.93,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Morbi,Morbi,22.81,70.83,West,3076,369,24,153,107,984,246,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Nadiad (Kheda),Nadiad,22.69,72.86,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Surendranagar,Surendranagar,22.72,71.63,West,3076,369,24,153,107,984,246,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Bharuch,Bharuch,21.7,72.99,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Mehsana,Mehsana,23.6,72.4,West,3076,369,24,153,107,984,246,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Kutch (Bhuj),Kutch,23.242,69.6669,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Porbandar,Porbandar,21.64,69.6,West,3076,369,24,153,107,984,246,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Banaskantha (Palanpur),Banaskantha,24.17,72.43,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Valsad,Valsad,20.61,72.93,West,3076,369,24,153,107,984,246,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Amreli,Amreli,21.6,71.22,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Aravalli (Modasa),Aravalli,23.46,73.3,West,3076,369,24,153,107,984,246,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Botad,Botad,22.17,71.66,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Chhota Udaipur,Chhota,22.3,74.01,West,3076,369,24,153,107,984,246,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Dahod,Dahod,22.83,74.25,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Dang (Ahwa),Dang,20.75,73.68,West,3076,369,24,153,107,984,246,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Devbhumi Dwarka,Devbhumi,22.24,68.96,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Gir Somnath (Veraval),Gir,20.9,70.36,West,3076,369,24,153,107,984,246,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Mahisagar (Lunawada),Mahisagar,23.13,73.61,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Narmada (Rajpipla),Narmada,21.87,73.5,West,3076,369,24,153,107,984,246,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Panchmahal (Godhra),Panchmahal,22.77,73.61,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Patan,Patan,23.85,72.12,West,3076,369,24,153,107,984,246,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Sabarkantha (Himmatnagar),Sabarkantha,23.6,72.95,West,4230,507,33,211,148,1353,338,169,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Gujarat,Tapi (Vyara),Tapi,21.12,73.4,West,3076,369,24,153,107,984,246,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Bengaluru Urban Commr.,Bengaluru,12.9716,77.5946,South,5772,692,46,288,202,1847,461,230,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Bengaluru Rural,Bengaluru,13.0,77.58,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Mysuru Commr.,Mysuru,12.2958,76.6394,South,5772,692,46,288,202,1847,461,230,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Mysuru Rural,Mysuru,12.305,76.645,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Hubballi-Dharwad Commr.,Hubballi-Dharwad,15.3647,75.124,South,5772,692,46,288,202,1847,461,230,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Dharwad Rural,Dharwad,15.37,75.13,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Mangaluru Commr.,Mangaluru,12.9141,74.856,South,5772,692,46,288,202,1847,461,230,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Dakshina Kannada Rural,Dakshina,12.92,74.86,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Belagavi Commr.,Belagavi,15.8497,74.4977,South,5772,692,46,288,202,1847,461,230,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Belagavi Rural,Belagavi,15.855,74.505,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Kalaburagi Commr.,Kalaburagi,17.3297,76.8343,South,5772,692,46,288,202,1847,461,230,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Kalaburagi Rural,Kalaburagi,17.335,76.84,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Davanagere,Davanagere,14.4644,75.9218,South,3298,395,26,164,115,1055,263,131,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Ballari,Ballari,15.1394,76.9214,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Vijayapura (Bijapur),Vijayapura,16.8302,75.71,South,3298,395,26,164,115,1055,263,131,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Shivamogga,Shivamogga,13.9299,75.5681,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Tumakuru,Tumakuru,13.3379,77.1017,South,3298,395,26,164,115,1055,263,131,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Bidar,Bidar,17.9104,77.5199,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Raichur,Raichur,16.212,77.3439,South,3298,395,26,164,115,1055,263,131,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Hassan,Hassan,13.0068,76.1004,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Udupi,Udupi,13.3409,74.7421,South,3298,395,26,164,115,1055,263,131,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Mandya,Mandya,12.5218,76.8951,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Kolar,Kolar,13.1378,78.1291,South,3298,395,26,164,115,1055,263,131,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Chikkamagaluru,Chikkamagaluru,13.3161,75.772,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Bagalkot,Bagalkot,16.18,75.69,South,3298,395,26,164,115,1055,263,131,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Chamarajanagar,Chamarajanagar,11.92,76.94,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Chikkaballapur,Chikkaballapur,13.43,77.72,South,3298,395,26,164,115,1055,263,131,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Chitradurga,Chitradurga,14.23,76.4,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Gadag,Gadag,15.42,75.63,South,3298,395,26,164,115,1055,263,131,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Haveri,Haveri,14.79,75.4,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Kodagu (Madikeri),Kodagu,12.4244,75.7382,South,3298,395,26,164,115,1055,263,131,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Koppal,Koppal,15.35,76.15,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Ramanagara,Ramanagara,12.72,77.28,South,3298,395,26,164,115,1055,263,131,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Uttara Kannada (Karwar),Uttara,14.81,74.13,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Vijayanagara (Hosapete),Vijayanagara,15.27,76.39,South,3298,395,26,164,115,1055,263,131,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Karnataka,Yadgir,Yadgir,16.76,77.13,South,4535,544,36,226,158,1451,362,181,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Thiruvananthapuram Commr.,Thiruvananthapuram,8.5241,76.9366,South,19223,2306,153,961,672,6151,1537,768,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Thiruvananthapuram Rural,Thiruvananthapuram,8.53,76.94,South,15104,1812,120,755,528,4833,1208,604,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Kochi (Ernakulam) Commr.,Kochi,9.9816,76.2999,South,19223,2306,153,961,672,6151,1537,768,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Ernakulam Rural,Ernakulam,9.99,76.31,South,15104,1812,120,755,528,4833,1208,604,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Kozhikode Commr.,Kozhikode,11.2588,75.7804,South,19223,2306,153,961,672,6151,1537,768,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Kozhikode Rural,Kozhikode,11.265,75.79,South,15104,1812,120,755,528,4833,1208,604,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Kollam Commr.,Kollam,8.8932,76.6141,South,19223,2306,153,961,672,6151,1537,768,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Kollam Rural,Kollam,8.9,76.62,South,15104,1812,120,755,528,4833,1208,604,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Thrissur Commr.,Thrissur,10.5276,76.2144,South,19223,2306,153,961,672,6151,1537,768,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Thrissur Rural,Thrissur,10.535,76.22,South,15104,1812,120,755,528,4833,1208,604,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Alappuzha,Alappuzha,9.4981,76.3388,South,10984,1318,87,549,384,3514,878,439,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Idukki,Idukki,9.85,76.94,South,15104,1812,120,755,528,4833,1208,604,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Kannur,Kannur,11.8745,75.3704,South,10984,1318,87,549,384,3514,878,439,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Kasaragod,Kasaragod,12.5102,74.9852,South,15104,1812,120,755,528,4833,1208,604,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Kottayam,Kottayam,9.5916,76.5222,South,10984,1318,87,549,384,3514,878,439,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Malappuram,Malappuram,11.051,76.0711,South,15104,1812,120,755,528,4833,1208,604,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Palakkad,Palakkad,10.7867,76.6548,South,10984,1318,87,549,384,3514,878,439,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Pathanamthitta,Pathanamthitta,9.2648,76.787,South,15104,1812,120,755,528,4833,1208,604,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Kerala,Wayanad (Kalpetta),Wayanad,11.605,76.0828,South,10984,1318,87,549,384,3514,878,439,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Delhi,New Delhi,New,28.6315,77.2167,North,14480,1737,115,724,506,4633,1158,579,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Delhi,Central Delhi,Central,28.6469,77.241,North,19910,2389,159,995,696,6371,1592,796,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Delhi,South Delhi,South,28.5494,77.2001,North,14480,1737,115,724,506,4633,1158,579,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Delhi,South East Delhi,South,28.5729,77.2323,North,19910,2389,159,995,696,6371,1592,796,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Delhi,South West Delhi,South,28.5921,77.046,North,14480,1737,115,724,506,4633,1158,579,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Delhi,West Delhi,West,28.6415,77.1209,North,19910,2389,159,995,696,6371,1592,796,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Delhi,North Delhi,North,28.6814,77.2227,North,14480,1737,115,724,506,4633,1158,579,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Delhi,North West Delhi,North,28.73,77.0,North,19910,2389,159,995,696,6371,1592,796,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Delhi,North East Delhi,North,28.669,77.267,North,14480,1737,115,724,506,4633,1158,579,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Delhi,East Delhi,East,28.636,77.292,North,19910,2389,159,995,696,6371,1592,796,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Delhi,Shahdara,Shahdara,28.673,77.289,North,14480,1737,115,724,506,4633,1158,579,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Kolkata Commr.,Kolkata,22.5726,88.3639,East,8362,1003,66,418,292,2675,668,334,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Howrah Commr.,Howrah,22.5958,88.2636,East,8362,1003,66,418,292,2675,668,334,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Howrah Rural,Howrah,22.6,88.27,East,4778,573,38,238,167,1528,382,191,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Bidhannagar Commr.,Bidhannagar,22.58,88.42,East,8362,1003,66,418,292,2675,668,334,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Barrackpore Commr.,Barrackpore,22.76,88.37,East,8362,1003,66,418,292,2675,668,334,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Asansol-Durgapur Commr.,Asansol-Durgapur,23.68,86.98,East,8362,1003,66,418,292,2675,668,334,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,North 24 Parganas,North,22.72,88.48,East,4778,573,38,238,167,1528,382,191,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,South 24 Parganas,South,22.53,88.33,East,6570,788,52,328,229,2102,525,262,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Hooghly,Hooghly,22.9,88.39,East,4778,573,38,238,167,1528,382,191,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Paschim Medinipur,Paschim,22.42,87.32,East,6570,788,52,328,229,2102,525,262,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Purba Medinipur,Purba,21.93,87.77,East,4778,573,38,238,167,1528,382,191,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Murshidabad,Murshidabad,24.18,88.27,East,6570,788,52,328,229,2102,525,262,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Nadia,Nadia,23.47,88.55,East,4778,573,38,238,167,1528,382,191,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Malda,Malda,25.0,88.14,East,6570,788,52,328,229,2102,525,262,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Jalpaiguri,Jalpaiguri,26.52,88.72,East,4778,573,38,238,167,1528,382,191,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Darjeeling,Darjeeling,27.041,88.2663,East,6570,788,52,328,229,2102,525,262,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Kalimpong,Kalimpong,27.06,88.47,East,4778,573,38,238,167,1528,382,191,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Alipurduar,Alipurduar,26.49,89.53,East,6570,788,52,328,229,2102,525,262,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Cooch Behar,Cooch,26.32,89.45,East,4778,573,38,238,167,1528,382,191,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Uttar Dinajpur,Uttar,25.62,88.12,East,6570,788,52,328,229,2102,525,262,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Dakshin Dinajpur,Dakshin,25.22,88.76,East,4778,573,38,238,167,1528,382,191,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Birbhum,Birbhum,23.84,87.61,East,6570,788,52,328,229,2102,525,262,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Bankura,Bankura,23.23,87.07,East,4778,573,38,238,167,1528,382,191,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Purulia,Purulia,23.33,86.36,East,6570,788,52,328,229,2102,525,262,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Paschim Bardhaman,Paschim,23.68,86.98,East,4778,573,38,238,167,1528,382,191,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Purba Bardhaman,Purba,23.24,87.86,East,6570,788,52,328,229,2102,525,262,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+West Bengal,Jhargram,Jhargram,22.45,86.98,East,4778,573,38,238,167,1528,382,191,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Patna,Patna,25.5941,85.1376,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Gaya,Gaya,24.7914,85.0002,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Bhagalpur,Bhagalpur,25.2425,86.9842,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Muzaffarpur,Muzaffarpur,26.1209,85.3647,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Purnia,Purnia,25.7771,87.4753,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Darbhanga,Darbhanga,26.1542,85.8918,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Bihar Sharif (Nalanda),Bihar,25.1982,85.5149,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Arrah (Bhojpur),Arrah,25.556,84.6603,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Begusarai,Begusarai,25.4182,86.1272,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Katihar,Katihar,25.5394,87.5684,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Munger,Munger,25.3748,86.4735,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Chhapra (Saran),Chhapra,25.7811,84.7543,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Saharsa,Saharsa,25.8835,86.6006,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Sasaram (Rohtas),Sasaram,24.9528,84.0315,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Hajipur (Vaishali),Hajipur,25.6858,85.2146,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Dehri,Dehri,24.9085,84.1843,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Siwan,Siwan,26.2196,84.3567,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Motihari (East Champaran),Motihari,26.647,84.9089,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Bettiah (West Champaran),Bettiah,26.8014,84.5042,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Nawada,Nawada,24.8872,85.5414,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Buxar,Buxar,25.5644,83.9777,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Kishanganj,Kishanganj,26.0964,87.9414,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Sitamarhi,Sitamarhi,26.5938,85.4893,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Araria,Araria,26.15,87.52,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Aurangabad,Aurangabad,24.75,84.37,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Banka,Banka,24.88,86.92,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Gopalganj,Gopalganj,26.47,84.44,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Jamui,Jamui,24.92,86.22,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Jehanabad,Jehanabad,25.21,84.99,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Kaimur (Bhabua),Kaimur,25.04,83.61,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Khagaria,Khagaria,25.5,86.48,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Lakhisarai,Lakhisarai,25.18,86.09,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Madhepura,Madhepura,25.92,86.79,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Madhubani,Madhubani,26.37,86.08,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Samastipur,Samastipur,25.86,85.78,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Sheikhpura,Sheikhpura,25.14,85.86,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Sheohar,Sheohar,26.52,85.29,East,3456,414,27,172,120,1105,276,138,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Bihar,Supaul,Supaul,26.12,86.6,East,4752,570,38,237,166,1520,380,190,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Hyderabad Commr.,Hyderabad,17.385,78.4867,South,3932,471,31,196,137,1258,314,157,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Cyberabad Commr.,Cyberabad,17.4399,78.3756,South,3932,471,31,196,137,1258,314,157,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Rachakonda Commr.,Rachakonda,17.3616,78.5753,South,3932,471,31,196,137,1258,314,157,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Warangal Commr.,Warangal,17.9689,79.5941,South,3932,471,31,196,137,1258,314,157,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Nizamabad Commr.,Nizamabad,18.6725,78.0941,South,3932,471,31,196,137,1258,314,157,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Karimnagar Commr.,Karimnagar,18.4386,79.1288,South,3932,471,31,196,137,1258,314,157,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Ramagundam Commr.,Ramagundam,18.7551,79.5147,South,3932,471,31,196,137,1258,314,157,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Khammam Commr.,Khammam,17.2473,80.1514,South,3932,471,31,196,137,1258,314,157,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Siddipet Commr.,Siddipet,18.1018,78.852,South,3932,471,31,196,137,1258,314,157,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Mahabubnagar,Mahabubnagar,16.7488,77.9856,South,3089,370,24,154,108,988,247,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Nalgonda,Nalgonda,17.0577,79.2689,South,2247,269,17,112,78,719,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Adilabad,Adilabad,19.6641,78.532,South,3089,370,24,154,108,988,247,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Bhadradri Kothagudem,Bhadradri,17.55,80.62,South,2247,269,17,112,78,719,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Jagtial,Jagtial,18.8,78.93,South,3089,370,24,154,108,988,247,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Jangaon,Jangaon,17.72,79.18,South,2247,269,17,112,78,719,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Jayashankar Bhupalpally,Jayashankar,18.43,79.86,South,3089,370,24,154,108,988,247,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Jogulamba Gadwal,Jogulamba,16.23,77.8,South,2247,269,17,112,78,719,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Kamareddy,Kamareddy,18.32,78.34,South,3089,370,24,154,108,988,247,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Komaram Bheem Asifabad,Komaram,19.36,79.29,South,2247,269,17,112,78,719,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Mahabubabad,Mahabubabad,17.6,80.0,South,3089,370,24,154,108,988,247,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Mancherial,Mancherial,18.87,79.46,South,2247,269,17,112,78,719,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Medak,Medak,18.04,78.26,South,3089,370,24,154,108,988,247,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Medchal-Malkajgiri,Medchal-Malkajgiri,17.52,78.55,South,2247,269,17,112,78,719,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Mulugu,Mulugu,18.19,79.94,South,3089,370,24,154,108,988,247,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Nagarkurnool,Nagarkurnool,16.48,78.33,South,2247,269,17,112,78,719,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Narayanpet,Narayanpet,16.73,77.5,South,3089,370,24,154,108,988,247,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Nirmal,Nirmal,19.1,78.34,South,2247,269,17,112,78,719,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Peddapalli,Peddapalli,18.61,79.38,South,3089,370,24,154,108,988,247,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Rajanna Sircilla,Rajanna,18.38,78.8,South,2247,269,17,112,78,719,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Rangareddy,Rangareddy,17.31,78.52,South,3089,370,24,154,108,988,247,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Sangareddy,Sangareddy,17.62,78.08,South,2247,269,17,112,78,719,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Suryapet,Suryapet,17.14,79.62,South,3089,370,24,154,108,988,247,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Vikarabad,Vikarabad,17.33,77.9,South,2247,269,17,112,78,719,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Wanaparthy,Wanaparthy,16.36,78.06,South,3089,370,24,154,108,988,247,123,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Telangana,Yadadri Bhuvanagiri,Yadadri,17.51,78.88,South,2247,269,17,112,78,719,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Visakhapatnam Commr.,Visakhapatnam,17.6868,83.2185,South,5439,652,43,271,190,1740,435,217,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Vijayawada Commr.,Vijayawada,16.5062,80.648,South,5439,652,43,271,190,1740,435,217,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Guntur,Guntur,16.3067,80.4365,South,3108,372,24,155,108,994,248,124,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Nellore,Nellore,14.4426,79.9865,South,4273,512,34,213,149,1367,341,170,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Kurnool,Kurnool,15.8281,78.0373,South,3108,372,24,155,108,994,248,124,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Kadapa,Kadapa,14.4673,78.8242,South,4273,512,34,213,149,1367,341,170,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Rajahmundry,Rajahmundry,17.0005,81.804,South,3108,372,24,155,108,994,248,124,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Kakinada,Kakinada,16.9891,82.2475,South,4273,512,34,213,149,1367,341,170,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Tirupati,Tirupati,13.6288,79.4192,South,3108,372,24,155,108,994,248,124,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Anantapur,Anantapur,14.6819,77.6006,South,4273,512,34,213,149,1367,341,170,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Vizianagaram,Vizianagaram,18.1067,83.3956,South,3108,372,24,155,108,994,248,124,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Eluru,Eluru,16.7107,81.0952,South,4273,512,34,213,149,1367,341,170,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Ongole (Prakasam),Ongole,15.5057,80.0499,South,3108,372,24,155,108,994,248,124,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Nandyal,Nandyal,15.48,78.48,South,4273,512,34,213,149,1367,341,170,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Machilipatnam (Krishna),Machilipatnam,16.1875,81.1389,South,3108,372,24,155,108,994,248,124,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Chittoor,Chittoor,13.2172,79.1003,South,4273,512,34,213,149,1367,341,170,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Anakapalli,Anakapalli,17.69,83.0,South,3108,372,24,155,108,994,248,124,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Annamayya (Rayachoti),Annamayya,14.05,78.75,South,4273,512,34,213,149,1367,341,170,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Bapatla,Bapatla,15.9,80.47,South,3108,372,24,155,108,994,248,124,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,Dr.,16.57,82.0,South,4273,512,34,213,149,1367,341,170,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,East Godavari,East,17.0,81.8,South,3108,372,24,155,108,994,248,124,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Kakinada,Kakinada,16.98,82.24,South,4273,512,34,213,149,1367,341,170,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,NTR (Vijayawada),NTR,16.51,80.64,South,3108,372,24,155,108,994,248,124,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Palnadu (Narasaraopet),Palnadu,16.23,80.05,South,4273,512,34,213,149,1367,341,170,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Parvathipuram Manyam,Parvathipuram,18.78,83.43,South,3108,372,24,155,108,994,248,124,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Sri Sathya Sai (Puttaparthi),Sri,14.16,77.81,South,4273,512,34,213,149,1367,341,170,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,Srikakulam,Srikakulam,18.3,83.9,South,3108,372,24,155,108,994,248,124,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andhra Pradesh,West Godavari (Bhimavaram),West,16.54,81.52,South,4273,512,34,213,149,1367,341,170,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Ludhiana Commr.,Ludhiana,30.901,75.8573,North,2199,263,17,109,76,703,175,87,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Ludhiana Rural,Ludhiana,30.91,75.865,North,1728,207,13,86,60,552,138,69,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Amritsar Commr.,Amritsar,31.634,74.8723,North,2199,263,17,109,76,703,175,87,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Amritsar Rural,Amritsar,31.64,74.88,North,1728,207,13,86,60,552,138,69,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Jalandhar Commr.,Jalandhar,31.326,75.5762,North,2199,263,17,109,76,703,175,87,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Jalandhar Rural,Jalandhar,31.33,75.58,North,1728,207,13,86,60,552,138,69,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Patiala,Patiala,30.3398,76.3869,North,1256,150,10,62,43,401,100,50,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Bathinda,Bathinda,30.211,74.9455,North,1728,207,13,86,60,552,138,69,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Hoshiarpur,Hoshiarpur,31.5143,75.9115,North,1256,150,10,62,43,401,100,50,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,SAS Nagar (Mohali),SAS,30.7046,76.7179,North,1728,207,13,86,60,552,138,69,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Pathankot,Pathankot,32.2689,75.6499,North,1256,150,10,62,43,401,100,50,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Moga,Moga,30.823,75.1734,North,1728,207,13,86,60,552,138,69,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Firozpur,Firozpur,30.9237,74.6138,North,1256,150,10,62,43,401,100,50,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Kapurthala,Kapurthala,31.38,75.38,North,1728,207,13,86,60,552,138,69,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Barnala,Barnala,30.38,75.54,North,1256,150,10,62,43,401,100,50,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Faridkot,Faridkot,30.67,74.75,North,1728,207,13,86,60,552,138,69,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Fatehgarh Sahib,Fatehgarh,30.65,76.4,North,1256,150,10,62,43,401,100,50,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Fazilka,Fazilka,30.4,74.03,North,1728,207,13,86,60,552,138,69,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Gurdaspur,Gurdaspur,32.04,75.4,North,1256,150,10,62,43,401,100,50,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Malerkotla,Malerkotla,30.52,75.89,North,1728,207,13,86,60,552,138,69,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Mansa,Mansa,29.98,75.38,North,1256,150,10,62,43,401,100,50,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Muktsar,Muktsar,30.48,74.52,North,1728,207,13,86,60,552,138,69,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Rupnagar (Ropar),Rupnagar,30.97,76.53,North,1256,150,10,62,43,401,100,50,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Sangrur,Sangrur,30.25,75.84,North,1728,207,13,86,60,552,138,69,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Shaheed Bhagat Singh Nagar (Nawanshahr),Shaheed,31.12,76.12,North,1256,150,10,62,43,401,100,50,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Punjab,Tarn Taran,Tarn,31.45,74.92,North,1728,207,13,86,60,552,138,69,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Gurugram Commr.,Gurugram,28.4595,77.0266,North,5632,675,45,281,197,1802,450,225,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Faridabad Commr.,Faridabad,28.4089,77.3178,North,5632,675,45,281,197,1802,450,225,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Panchkula Commr.,Panchkula,30.6942,76.8606,North,5632,675,45,281,197,1802,450,225,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Sonipat Commr.,Sonipat,28.9931,77.0151,North,5632,675,45,281,197,1802,450,225,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Panipat,Panipat,29.3909,76.9635,North,3218,386,25,160,112,1029,257,128,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Ambala,Ambala,30.3782,76.7767,North,4425,531,35,221,154,1416,354,177,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Yamunanagar,Yamunanagar,30.129,77.2674,North,3218,386,25,160,112,1029,257,128,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Rohtak,Rohtak,28.8955,76.6066,North,4425,531,35,221,154,1416,354,177,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Hisar,Hisar,29.1492,75.7217,North,3218,386,25,160,112,1029,257,128,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Karnal,Karnal,29.6857,76.9905,North,4425,531,35,221,154,1416,354,177,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Bhiwani,Bhiwani,28.7832,76.1397,North,3218,386,25,160,112,1029,257,128,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Sirsa,Sirsa,29.5349,75.0298,North,4425,531,35,221,154,1416,354,177,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Jind,Jind,29.314,76.314,North,3218,386,25,160,112,1029,257,128,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Kaithal,Kaithal,29.8,76.4,North,4425,531,35,221,154,1416,354,177,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Kurukshetra (Thanesar),Kurukshetra,29.9695,76.8783,North,3218,386,25,160,112,1029,257,128,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Rewari,Rewari,28.18,76.62,North,4425,531,35,221,154,1416,354,177,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Palwal,Palwal,28.14,77.33,North,3218,386,25,160,112,1029,257,128,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Charkhi Dadri,Charkhi,28.6,76.27,North,4425,531,35,221,154,1416,354,177,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Fatehabad,Fatehabad,29.51,75.45,North,3218,386,25,160,112,1029,257,128,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Jhajjar,Jhajjar,28.61,76.65,North,4425,531,35,221,154,1416,354,177,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Mahendragarh (Narnaul),Mahendragarh,28.04,76.11,North,3218,386,25,160,112,1029,257,128,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Haryana,Nuh (Mewat),Nuh,28.11,77.0,North,4425,531,35,221,154,1416,354,177,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Bhubaneswar (Khordha) Commr.,Bhubaneswar,20.2961,85.8245,East,3730,447,29,186,130,1193,298,149,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Cuttack Commr.,Cuttack,20.4625,85.8828,East,3730,447,29,186,130,1193,298,149,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Rourkela (Sundargarh),Rourkela,22.2604,84.8536,East,2132,255,17,106,74,682,170,85,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Puri,Puri,19.8135,85.8312,East,2931,351,23,146,102,937,234,117,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Berhampur (Ganjam),Berhampur,19.315,84.7941,East,2132,255,17,106,74,682,170,85,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Sambalpur,Sambalpur,21.4669,83.9812,East,2931,351,23,146,102,937,234,117,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Balasore,Balasore,21.4934,86.9135,East,2132,255,17,106,74,682,170,85,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Bhadrak,Bhadrak,21.0574,86.4959,East,2931,351,23,146,102,937,234,117,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Baripada (Mayurbhanj),Baripada,21.9347,86.7324,East,2132,255,17,106,74,682,170,85,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Jharsuguda,Jharsuguda,21.8554,84.0063,East,2931,351,23,146,102,937,234,117,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Angul,Angul,20.84,85.1,East,2132,255,17,106,74,682,170,85,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Balangir,Balangir,20.71,83.48,East,2931,351,23,146,102,937,234,117,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Bargarh,Bargarh,21.33,83.62,East,2132,255,17,106,74,682,170,85,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Boudh,Boudh,20.84,84.32,East,2931,351,23,146,102,937,234,117,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Deogarh,Deogarh,21.53,84.73,East,2132,255,17,106,74,682,170,85,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Dhenkanal,Dhenkanal,20.67,85.6,East,2931,351,23,146,102,937,234,117,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Gajapati (Paralakhemundi),Gajapati,18.77,84.09,East,2132,255,17,106,74,682,170,85,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Jagatsinghpur,Jagatsinghpur,20.27,86.17,East,2931,351,23,146,102,937,234,117,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Jajpur,Jajpur,20.85,86.33,East,2132,255,17,106,74,682,170,85,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Kalahandi (Bhawanipatna),Kalahandi,19.9,83.17,East,2931,351,23,146,102,937,234,117,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Kandhamal (Phulbani),Kandhamal,20.48,84.23,East,2132,255,17,106,74,682,170,85,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Kendrapara,Kendrapara,20.5,86.42,East,2931,351,23,146,102,937,234,117,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Kendujhar (Keonjhar),Kendujhar,21.63,85.58,East,2132,255,17,106,74,682,170,85,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Koraput,Koraput,18.81,82.71,East,2931,351,23,146,102,937,234,117,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Malkangiri,Malkangiri,18.35,81.9,East,2132,255,17,106,74,682,170,85,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Nabarangpur,Nabarangpur,19.23,82.55,East,2931,351,23,146,102,937,234,117,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Nayagarh,Nayagarh,20.13,85.11,East,2132,255,17,106,74,682,170,85,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Nuapada,Nuapada,20.83,82.52,East,2931,351,23,146,102,937,234,117,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Rayagada,Rayagada,19.17,83.42,East,2132,255,17,106,74,682,170,85,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Odisha,Subarnapur (Sonepur),Subarnapur,20.84,83.91,East,2931,351,23,146,102,937,234,117,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Guwahati (Kamrup Metro) Commr.,Guwahati,26.1433,91.7898,North-East,4498,539,35,224,157,1439,359,179,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Kamrup Rural,Kamrup,26.18,91.58,North-East,3534,424,28,176,123,1130,282,141,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Dibrugarh,Dibrugarh,27.4728,94.912,North-East,2570,308,20,128,89,822,205,102,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Silchar (Cachar),Silchar,24.8333,92.7789,North-East,3534,424,28,176,123,1130,282,141,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Jorhat,Jorhat,26.7509,94.2037,North-East,2570,308,20,128,89,822,205,102,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Nagaon,Nagaon,26.3452,92.684,North-East,3534,424,28,176,123,1130,282,141,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Tinsukia,Tinsukia,27.4922,95.3468,North-East,2570,308,20,128,89,822,205,102,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Tezpur (Sonitpur),Tezpur,26.6528,92.7926,North-East,3534,424,28,176,123,1130,282,141,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Barpeta,Barpeta,26.32,91.0,North-East,2570,308,20,128,89,822,205,102,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Bongaigaon,Bongaigaon,26.48,90.56,North-East,3534,424,28,176,123,1130,282,141,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Darrang (Mangaldai),Darrang,26.43,92.03,North-East,2570,308,20,128,89,822,205,102,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Dhemaji,Dhemaji,27.48,94.58,North-East,3534,424,28,176,123,1130,282,141,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Dhubri,Dhubri,26.02,89.97,North-East,2570,308,20,128,89,822,205,102,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Goalpara,Goalpara,26.17,90.62,North-East,3534,424,28,176,123,1130,282,141,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Golaghat,Golaghat,26.52,93.97,North-East,2570,308,20,128,89,822,205,102,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Hailakandi,Hailakandi,24.68,92.56,North-East,3534,424,28,176,123,1130,282,141,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Hojai,Hojai,26.0,92.86,North-East,2570,308,20,128,89,822,205,102,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Karbi Anglong (Diphu),Karbi,25.84,93.43,North-East,3534,424,28,176,123,1130,282,141,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Karimganj,Karimganj,24.87,92.35,North-East,2570,308,20,128,89,822,205,102,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Kokrajhar,Kokrajhar,26.4,90.27,North-East,3534,424,28,176,123,1130,282,141,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Lakhimpur (North Lakhimpur),Lakhimpur,27.23,94.1,North-East,2570,308,20,128,89,822,205,102,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Majuli,Majuli,26.95,94.22,North-East,3534,424,28,176,123,1130,282,141,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Morigaon,Morigaon,26.25,92.34,North-East,2570,308,20,128,89,822,205,102,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Nalbari,Nalbari,26.44,91.44,North-East,3534,424,28,176,123,1130,282,141,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Sivasagar,Sivasagar,26.98,94.63,North-East,2570,308,20,128,89,822,205,102,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,South Salmara-Mankachar,South,25.68,89.87,North-East,3534,424,28,176,123,1130,282,141,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,Udalguri,Udalguri,26.75,92.1,North-East,2570,308,20,128,89,822,205,102,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Assam,West Karbi Anglong,West,25.9,92.7,North-East,3534,424,28,176,123,1130,282,141,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Raipur,Raipur,21.2514,81.6296,Central,1628,195,13,81,56,520,130,65,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Durg (Bhilai),Durg,21.1904,81.2849,Central,2238,268,17,111,78,716,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Bilaspur,Bilaspur,22.0797,82.1409,Central,1628,195,13,81,56,520,130,65,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Korba,Korba,22.3595,82.7501,Central,2238,268,17,111,78,716,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Rajnandgaon,Rajnandgaon,21.0974,81.036,Central,1628,195,13,81,56,520,130,65,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Raigarh,Raigarh,21.8974,83.395,Central,2238,268,17,111,78,716,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Jagdalpur (Bastar),Jagdalpur,19.0744,82.0081,Central,1628,195,13,81,56,520,130,65,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Ambikapur (Surguja),Ambikapur,23.1189,83.1974,Central,2238,268,17,111,78,716,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Dhamtari,Dhamtari,20.7071,81.5498,Central,1628,195,13,81,56,520,130,65,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Mahasamund,Mahasamund,21.1091,82.0967,Central,2238,268,17,111,78,716,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Balod,Balod,20.73,81.2,Central,1628,195,13,81,56,520,130,65,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Baloda Bazar,Baloda,21.66,82.16,Central,2238,268,17,111,78,716,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Balrampur-Ramanujganj,Balrampur-Ramanujganj,23.61,83.61,Central,1628,195,13,81,56,520,130,65,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Bemetara,Bemetara,21.7,81.55,Central,2238,268,17,111,78,716,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Bijapur,Bijapur,18.79,80.81,Central,1628,195,13,81,56,520,130,65,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Dantewada (South Bastar),Dantewada,18.9,81.35,Central,2238,268,17,111,78,716,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Gariaband,Gariaband,20.95,82.08,Central,1628,195,13,81,56,520,130,65,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Janjgir-Champa,Janjgir-Champa,22.01,82.57,Central,2238,268,17,111,78,716,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Jashpur,Jashpur,22.88,84.14,Central,1628,195,13,81,56,520,130,65,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Kabirdham (Kawardha),Kabirdham,22.01,81.24,Central,2238,268,17,111,78,716,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Kanker (North Bastar),Kanker,20.27,81.49,Central,1628,195,13,81,56,520,130,65,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Kondagaon,Kondagaon,19.6,81.67,Central,2238,268,17,111,78,716,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Koriya,Koriya,23.25,82.55,Central,1628,195,13,81,56,520,130,65,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Mungeli,Mungeli,22.07,81.68,Central,2238,268,17,111,78,716,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Narayanpur,Narayanpur,19.72,81.25,Central,1628,195,13,81,56,520,130,65,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Sukma,Sukma,18.4,81.67,Central,2238,268,17,111,78,716,179,89,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chhattisgarh,Surajpur,Surajpur,23.22,82.86,Central,1628,195,13,81,56,520,130,65,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Ranchi,Ranchi,23.3441,85.3096,East,1448,173,11,72,50,463,115,57,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Jamshedpur (East Singhbhum),Jamshedpur,22.8046,86.2029,East,1992,239,15,99,69,637,159,79,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Dhanbad,Dhanbad,23.7957,86.4304,East,1448,173,11,72,50,463,115,57,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Bokaro,Bokaro,23.6693,86.1511,East,1992,239,15,99,69,637,159,79,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Deoghar,Deoghar,24.4826,86.7001,East,1448,173,11,72,50,463,115,57,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Hazaribagh,Hazaribagh,23.9925,85.3637,East,1992,239,15,99,69,637,159,79,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Giridih,Giridih,24.1856,86.3075,East,1448,173,11,72,50,463,115,57,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Ramgarh,Ramgarh,23.63,85.52,East,1992,239,15,99,69,637,159,79,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Medininagar (Palamu),Medininagar,24.04,84.07,East,1448,173,11,72,50,463,115,57,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Chatra,Chatra,24.21,84.87,East,1992,239,15,99,69,637,159,79,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Dumka,Dumka,24.27,87.25,East,1448,173,11,72,50,463,115,57,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Garhwa,Garhwa,24.16,83.81,East,1992,239,15,99,69,637,159,79,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Godda,Godda,24.83,87.21,East,1448,173,11,72,50,463,115,57,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Gumla,Gumla,23.04,84.54,East,1992,239,15,99,69,637,159,79,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Jamtara,Jamtara,23.96,86.8,East,1448,173,11,72,50,463,115,57,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Khunti,Khunti,23.07,85.28,East,1992,239,15,99,69,637,159,79,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Koderma,Koderma,24.47,85.59,East,1448,173,11,72,50,463,115,57,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Latehar,Latehar,23.74,84.5,East,1992,239,15,99,69,637,159,79,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Lohardaga,Lohardaga,23.43,84.68,East,1448,173,11,72,50,463,115,57,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Pakur,Pakur,24.63,87.85,East,1992,239,15,99,69,637,159,79,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Sahebganj,Sahebganj,25.25,87.65,East,1448,173,11,72,50,463,115,57,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Seraikela Kharsawan,Seraikela,22.7,85.93,East,1992,239,15,99,69,637,159,79,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,Simdega,Simdega,22.61,84.51,East,1448,173,11,72,50,463,115,57,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jharkhand,West Singhbhum (Chaibasa),West,22.56,85.81,East,1992,239,15,99,69,637,159,79,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttarakhand,Dehradun,Dehradun,30.3165,78.0322,North,692,83,5,34,24,221,55,27,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttarakhand,Haridwar,Haridwar,29.9457,78.1642,North,952,114,7,47,33,304,76,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttarakhand,Nainital,Nainital,29.3919,79.4542,North,692,83,5,34,24,221,55,27,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttarakhand,Udham Singh Nagar (Rudrapur),Udham,28.98,79.4,North,952,114,7,47,33,304,76,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttarakhand,Almora,Almora,29.6,79.67,North,692,83,5,34,24,221,55,27,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttarakhand,Pauri Garhwal,Pauri,30.15,78.78,North,952,114,7,47,33,304,76,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttarakhand,Tehri Garhwal,Tehri,30.38,78.48,North,692,83,5,34,24,221,55,27,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttarakhand,Chamoli (Gopeshwar),Chamoli,30.41,79.33,North,952,114,7,47,33,304,76,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttarakhand,Pithoragarh,Pithoragarh,29.58,80.22,North,692,83,5,34,24,221,55,27,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttarakhand,Uttarkashi,Uttarkashi,30.73,78.44,North,952,114,7,47,33,304,76,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttarakhand,Bageshwar,Bageshwar,29.85,79.77,North,692,83,5,34,24,221,55,27,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttarakhand,Champawat,Champawat,29.33,80.1,North,952,114,7,47,33,304,76,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Uttarakhand,Rudraprayag,Rudraprayag,30.28,78.98,North,692,83,5,34,24,221,55,27,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Himachal Pradesh,Shimla,Shimla,31.1048,77.1734,North,942,113,7,47,32,301,75,37,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Himachal Pradesh,Kangra (Dharamshala),Kangra,32.219,76.3234,North,1295,155,10,64,45,414,103,51,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Himachal Pradesh,Mandi,Mandi,31.7087,76.932,North,942,113,7,47,32,301,75,37,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Himachal Pradesh,Solan,Solan,30.9045,77.0967,North,1295,155,10,64,45,414,103,51,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Himachal Pradesh,Kullu,Kullu,31.9579,77.1095,North,942,113,7,47,32,301,75,37,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Himachal Pradesh,Sirmaur (Nahan),Sirmaur,30.56,77.3,North,1295,155,10,64,45,414,103,51,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Himachal Pradesh,Una,Una,31.47,76.27,North,942,113,7,47,32,301,75,37,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Himachal Pradesh,Chamba,Chamba,32.55,76.13,North,1295,155,10,64,45,414,103,51,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Himachal Pradesh,Hamirpur,Hamirpur,31.68,76.52,North,942,113,7,47,32,301,75,37,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Himachal Pradesh,Bilaspur,Bilaspur,31.33,76.76,North,1295,155,10,64,45,414,103,51,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Himachal Pradesh,Kinnaur (Reckong Peo),Kinnaur,31.54,78.27,North,942,113,7,47,32,301,75,37,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Himachal Pradesh,Lahaul and Spiti (Keylong),Lahaul,32.57,77.03,North,1295,155,10,64,45,414,103,51,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Srinagar,Srinagar,34.0837,74.7973,North,963,115,7,48,33,308,77,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Jammu,Jammu,32.7266,74.857,North,1324,158,10,66,46,423,105,52,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Anantnag,Anantnag,33.7311,75.1522,North,963,115,7,48,33,308,77,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Baramulla,Baramulla,34.209,74.3436,North,1324,158,10,66,46,423,105,52,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Budgam,Budgam,34.02,74.72,North,963,115,7,48,33,308,77,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Pulwama,Pulwama,33.87,74.89,North,1324,158,10,66,46,423,105,52,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Kupwara,Kupwara,34.53,74.26,North,963,115,7,48,33,308,77,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Shopian,Shopian,33.72,74.83,North,1324,158,10,66,46,423,105,52,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Ganderbal,Ganderbal,34.22,74.78,North,963,115,7,48,33,308,77,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Kulgam,Kulgam,33.65,75.02,North,1324,158,10,66,46,423,105,52,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Kathua,Kathua,32.37,75.52,North,963,115,7,48,33,308,77,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Udhampur,Udhampur,32.93,75.14,North,1324,158,10,66,46,423,105,52,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Rajouri,Rajouri,33.38,74.3,North,963,115,7,48,33,308,77,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Poonch,Poonch,33.77,74.1,North,1324,158,10,66,46,423,105,52,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Reasi,Reasi,33.08,74.83,North,963,115,7,48,33,308,77,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Samba,Samba,32.56,75.12,North,1324,158,10,66,46,423,105,52,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Doda,Doda,33.14,75.54,North,963,115,7,48,33,308,77,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Kishtwar,Kishtwar,33.32,75.77,North,1324,158,10,66,46,423,105,52,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Ramban,Ramban,33.24,75.2,North,963,115,7,48,33,308,77,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Jammu & Kashmir,Bandipora,Bandipora,34.42,74.64,North,1324,158,10,66,46,423,105,52,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Goa,North Goa (Panaji),North,15.4909,73.8278,West,1160,139,9,58,40,371,92,46,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Goa,South Goa (Margao),South,15.2832,73.9862,West,1595,191,12,79,55,510,127,63,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Chandigarh,Chandigarh,Chandigarh,30.7333,76.7794,North,2709,325,21,135,94,866,216,108,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Puducherry,Puducherry,Puducherry,11.9416,79.8083,South,692,83,5,34,24,221,55,27,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Puducherry,Karaikal,Karaikal,10.9254,79.838,South,952,114,7,47,33,304,76,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Puducherry,Mahe,Mahe,11.7,75.53,South,692,83,5,34,24,221,55,27,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Puducherry,Yanam,Yanam,16.73,82.21,South,952,114,7,47,33,304,76,38,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Ladakh,Leh,Leh,34.1526,77.5771,North,140,16,1,7,4,44,11,5,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Ladakh,Kargil,Kargil,34.5539,76.1349,North,192,23,1,9,6,61,15,7,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tripura,West Tripura (Agartala),West,23.8315,91.2868,North-East,368,44,2,18,12,117,29,14,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tripura,South Tripura,South,23.16,91.5,North-East,507,60,4,25,17,162,40,20,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tripura,Gomati (Udaipur),Gomati,23.53,91.48,North-East,368,44,2,18,12,117,29,14,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tripura,Dhalai (Ambassa),Dhalai,23.92,91.85,North-East,507,60,4,25,17,162,40,20,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tripura,Unakoti (Kailashahar),Unakoti,24.33,92.0,North-East,368,44,2,18,12,117,29,14,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tripura,North Tripura (Dharmanagar),North,24.38,92.17,North-East,507,60,4,25,17,162,40,20,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tripura,Khowai,Khowai,24.07,91.6,North-East,368,44,2,18,12,117,29,14,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Tripura,Sepahijala (Bishramganj),Sepahijala,23.63,91.33,North-East,507,60,4,25,17,162,40,20,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Meghalaya,East Khasi Hills (Shillong),East,25.5788,91.8933,North-East,233,27,1,11,8,74,18,9,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Meghalaya,West Garo Hills (Tura),West,25.52,90.22,North-East,321,38,2,16,11,102,25,12,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Meghalaya,West Khasi Hills (Nongstoin),West,25.52,91.27,North-East,233,27,1,11,8,74,18,9,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Meghalaya,Ri-Bhoi (Nongpoh),Ri-Bhoi,25.9,91.88,North-East,321,38,2,16,11,102,25,12,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Meghalaya,South West Khasi Hills (Mawkyrwat),South,25.37,91.46,North-East,233,27,1,11,8,74,18,9,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Meghalaya,East Jaintia Hills (Khliehriat),East,25.35,92.37,North-East,321,38,2,16,11,102,25,12,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Meghalaya,West Jaintia Hills (Jowai),West,25.45,92.2,North-East,233,27,1,11,8,74,18,9,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Meghalaya,North Garo Hills (Resubelpara),North,25.9,90.6,North-East,321,38,2,16,11,102,25,12,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Meghalaya,East Garo Hills (Williamnagar),East,25.6,90.58,North-East,233,27,1,11,8,74,18,9,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Meghalaya,South Garo Hills (Baghmara),South,25.2,90.63,North-East,321,38,2,16,11,102,25,12,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Meghalaya,South West Garo Hills (Ampati),South,25.46,89.93,North-East,233,27,1,11,8,74,18,9,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Meghalaya,Eastern West Khasi Hills (Mairang),Eastern,25.56,91.64,North-East,321,38,2,16,11,102,25,12,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Manipur,Imphal West,Imphal,24.817,93.9368,North-East,168,20,1,8,5,53,13,6,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Manipur,Imphal East,Imphal,24.82,93.97,North-East,231,27,1,11,8,73,18,9,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Manipur,Thoubal,Thoubal,24.63,94.0,North-East,168,20,1,8,5,53,13,6,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Manipur,Bishnupur,Bishnupur,24.63,93.76,North-East,231,27,1,11,8,73,18,9,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Manipur,Churachandpur,Churachandpur,24.33,93.68,North-East,168,20,1,8,5,53,13,6,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Manipur,Ukhrul,Ukhrul,25.12,94.36,North-East,231,27,1,11,8,73,18,9,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Manipur,Senapati,Senapati,25.27,94.02,North-East,168,20,1,8,5,53,13,6,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Manipur,Tamenglong,Tamenglong,24.98,93.49,North-East,231,27,1,11,8,73,18,9,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Manipur,Chandel,Chandel,24.4,94.03,North-East,168,20,1,8,5,53,13,6,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Manipur,Kakching,Kakching,24.48,93.98,North-East,231,27,1,11,8,73,18,9,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Manipur,Kamjong,Kamjong,24.85,94.52,North-East,168,20,1,8,5,53,13,6,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Manipur,Kangpokpi,Kangpokpi,25.15,93.97,North-East,231,27,1,11,8,73,18,9,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Manipur,Noney,Noney,24.83,93.6,North-East,168,20,1,8,5,53,13,6,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Manipur,Pherzawl,Pherzawl,24.25,93.2,North-East,231,27,1,11,8,73,18,9,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Manipur,Tengnoupal,Tengnoupal,24.35,94.15,North-East,168,20,1,8,5,53,13,6,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Manipur,Jiribam,Jiribam,24.8,93.12,North-East,231,27,1,11,8,73,18,9,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Nagaland,Kohima,Kohima,25.6751,94.1086,North-East,65,7,1,3,2,20,5,2,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Nagaland,Dimapur,Dimapur,25.9068,93.7271,North-East,90,10,1,4,3,28,7,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Nagaland,Mokokchung,Mokokchung,26.32,94.52,North-East,65,7,1,3,2,20,5,2,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Nagaland,Tuensang,Tuensang,26.28,94.83,North-East,90,10,1,4,3,28,7,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Nagaland,Wokha,Wokha,26.1,94.26,North-East,65,7,1,3,2,20,5,2,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Nagaland,Zunheboto,Zunheboto,25.97,94.52,North-East,90,10,1,4,3,28,7,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Nagaland,Phek,Phek,25.67,94.5,North-East,65,7,1,3,2,20,5,2,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Nagaland,Mon,Mon,26.75,95.07,North-East,90,10,1,4,3,28,7,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Nagaland,Longleng,Longleng,26.47,94.81,North-East,65,7,1,3,2,20,5,2,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Nagaland,Kiphire,Kiphire,25.87,94.78,North-East,90,10,1,4,3,28,7,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Nagaland,Peren,Peren,25.52,93.74,North-East,65,7,1,3,2,20,5,2,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Nagaland,Noklak,Noklak,26.2,95.0,North-East,90,10,1,4,3,28,7,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Nagaland,Chumoukedima,Chumoukedima,25.82,93.78,North-East,65,7,1,3,2,20,5,2,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Nagaland,Niuland,Niuland,25.95,93.85,North-East,90,10,1,4,3,28,7,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Nagaland,Tseminyu,Tseminyu,25.93,94.21,North-East,65,7,1,3,2,20,5,2,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Nagaland,Shamator,Shamator,26.05,94.88,North-East,90,10,1,4,3,28,7,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Mizoram,Aizawl,Aizawl,23.7271,92.7176,North-East,183,21,1,9,6,58,14,7,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Mizoram,Lunglei,Lunglei,22.88,92.74,North-East,251,30,2,12,8,80,20,10,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Mizoram,Champhai,Champhai,23.47,93.33,North-East,183,21,1,9,6,58,14,7,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Mizoram,Kolasib,Kolasib,24.23,92.68,North-East,251,30,2,12,8,80,20,10,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Mizoram,Serchhip,Serchhip,23.34,92.85,North-East,183,21,1,9,6,58,14,7,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Mizoram,Mamit,Mamit,23.93,92.49,North-East,251,30,2,12,8,80,20,10,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Mizoram,Lawngtlai,Lawngtlai,22.53,92.89,North-East,183,21,1,9,6,58,14,7,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Mizoram,Siaha,Siaha,22.49,92.98,North-East,251,30,2,12,8,80,20,10,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Mizoram,Hnahthial,Hnahthial,22.97,92.93,North-East,183,21,1,9,6,58,14,7,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Mizoram,Khawzawl,Khawzawl,23.53,93.18,North-East,251,30,2,12,8,80,20,10,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Mizoram,Saitual,Saitual,23.97,92.96,North-East,183,21,1,9,6,58,14,7,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Papum Pare (Itanagar),Papum,27.0844,93.6053,North-East,84,10,1,4,2,26,6,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Tawang,Tawang,27.5861,91.8594,North-East,115,13,1,5,4,36,9,4,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,West Kameng (Bomdila),West,27.26,92.42,North-East,84,10,1,4,2,26,6,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,East Kameng (Seppa),East,27.36,93.03,North-East,115,13,1,5,4,36,9,4,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Lower Subansiri (Ziro),Lower,27.59,93.83,North-East,84,10,1,4,2,26,6,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Upper Subansiri (Daporijo),Upper,27.99,94.22,North-East,115,13,1,5,4,36,9,4,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,West Siang (Aalo),West,28.17,94.8,North-East,84,10,1,4,2,26,6,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,East Siang (Pasighat),East,28.07,95.33,North-East,115,13,1,5,4,36,9,4,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Lohit (Tezu),Lohit,27.92,96.17,North-East,84,10,1,4,2,26,6,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Changlang,Changlang,27.12,95.73,North-East,115,13,1,5,4,36,9,4,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Tirap (Khonsa),Tirap,27.01,95.57,North-East,84,10,1,4,2,26,6,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Dibang Valley (Anini),Dibang,28.79,95.9,North-East,115,13,1,5,4,36,9,4,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Lower Dibang Valley (Roing),Lower,28.14,95.83,North-East,84,10,1,4,2,26,6,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Kurung Kumey (Koloriang),Kurung,27.9,93.34,North-East,115,13,1,5,4,36,9,4,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Namsai,Namsai,27.67,95.87,North-East,84,10,1,4,2,26,6,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Kra Daadi (Jamin),Kra,27.8,93.2,North-East,115,13,1,5,4,36,9,4,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Longding,Longding,26.85,95.21,North-East,84,10,1,4,2,26,6,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Siang (Pangin),Siang,28.21,94.99,North-East,115,13,1,5,4,36,9,4,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Upper Siang (Yingkiong),Upper,28.61,94.92,North-East,84,10,1,4,2,26,6,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Anjaw (Hawai),Anjaw,27.88,96.8,North-East,115,13,1,5,4,36,9,4,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Kamle (Raga),Kamle,27.75,94.05,North-East,84,10,1,4,2,26,6,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Lepa Rada (Basar),Lepa,27.98,94.67,North-East,115,13,1,5,4,36,9,4,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Pakke Kessang (Lemmi),Pakke,27.05,93.2,North-East,84,10,1,4,2,26,6,3,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Arunachal Pradesh,Shi Yomi (Tato),Shi,28.53,94.38,North-East,115,13,1,5,4,36,9,4,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Sikkim,East Sikkim (Gangtok),East,27.3389,88.6065,North-East,115,13,1,5,4,36,9,4,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Sikkim,South Sikkim (Namchi),South,27.17,88.35,North-East,158,18,1,7,5,50,12,6,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Sikkim,West Sikkim (Gyalshing),West,27.28,88.23,North-East,115,13,1,5,4,36,9,4,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Sikkim,North Sikkim (Mangan),North,27.5,88.53,North-East,158,18,1,7,5,50,12,6,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Sikkim,Pakyong,Pakyong,27.23,88.59,North-East,115,13,1,5,4,36,9,4,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Sikkim,Soreng,Soreng,27.17,88.2,North-East,158,18,1,7,5,50,12,6,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andaman & Nicobar Islands,South Andaman (Port Blair),South,11.6234,92.7265,South,205,24,1,10,7,65,16,8,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andaman & Nicobar Islands,North and Middle Andaman (Mayabunder),North,12.92,92.9,South,282,33,2,14,9,90,22,11,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Andaman & Nicobar Islands,Nicobar (Car Nicobar),Nicobar,9.15,92.82,South,205,24,1,10,7,65,16,8,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Dadra & Nagar Haveli and Daman & Diu,Daman,Daman,20.3974,72.8328,West,141,16,1,7,4,45,11,5,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Dadra & Nagar Haveli and Daman & Diu,Diu,Diu,20.7144,70.9874,West,194,23,1,9,6,62,15,7,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Dadra & Nagar Haveli and Daman & Diu,Dadra and Nagar Haveli (Silvassa),Dadra,20.2763,73.0083,West,141,16,1,7,4,45,11,5,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs
+Lakshadweep,Lakshadweep (Kavaratti),Lakshadweep,10.5669,72.642,South,32,3,0,1,1,10,2,1,2014-2016 NCRB,National Crime Records Bureau & State Police SCRBs

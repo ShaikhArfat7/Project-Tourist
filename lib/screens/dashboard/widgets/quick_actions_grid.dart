@@ -4,10 +4,26 @@ class QuickActionsGrid extends StatelessWidget {
   final ValueChanged<String>? onActionTap;
 
   final List<Map<String, dynamic>> _actions = const [
-    {'icon': Icons.sos, 'label': 'SOS Alert', 'color': Color(0xFFDC2626)},
-    {'icon': Icons.map, 'label': 'Safe Map', 'color': Color(0xFF0891B2)},
-    {'icon': Icons.local_hospital, 'label': 'Hospitals', 'color': Color(0xFF16A34A)},
-    {'icon': Icons.local_police, 'label': 'Police', 'color': Color(0xFF7C2D12)},
+    {
+      'icon': Icons.local_police_outlined,
+      'label': 'Nearby Police',
+      'color': Color(0xFF1D4ED8),
+    },
+    {
+      'icon': Icons.local_hospital_outlined,
+      'label': 'Nearby Hospitals',
+      'color': Color(0xFFDC2626),
+    },
+    {
+      'icon': Icons.local_pharmacy_outlined,
+      'label': 'Pharmacies',
+      'color': Color(0xFF0891B2),
+    },
+    {
+      'icon': Icons.emergency_outlined,
+      'label': 'Emergency Services',
+      'color': Color(0xFF0F766E),
+    },
   ];
 
   const QuickActionsGrid({super.key, this.onActionTap});
@@ -15,42 +31,53 @@ class QuickActionsGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.count(
-      crossAxisCount: 4,
+      crossAxisCount: 2,
+      childAspectRatio: 2.4,
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
-      mainAxisSpacing: 8,
-      crossAxisSpacing: 8,
+      mainAxisSpacing: 10,
+      crossAxisSpacing: 10,
       children: _actions.map((a) {
         final label = a['label'] as String;
         final color = a['color'] as Color;
         final icon = a['icon'] as IconData;
 
-        return GestureDetector(
-          onTap: () {
-            if (onActionTap != null) {
-              onActionTap!(label);
-            }
-          },
+        return InkWell(
+          borderRadius: BorderRadius.circular(14),
+          onTap: () => onActionTap?.call(label),
           child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
             decoration: BoxDecoration(
-              color: color.withValues(alpha: 0.1),
+              color: Colors.white,
               borderRadius: BorderRadius.circular(14),
-              border: Border.all(color: color.withValues(alpha: 0.25)),
+              border: Border.all(color: color.withValues(alpha: 0.28)),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.03),
+                  blurRadius: 4,
+                  offset: const Offset(0, 2),
+                ),
+              ],
             ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+            child: Row(
               children: [
-                Icon(icon, color: color, size: 28),
-                const SizedBox(height: 6),
-                Text(
-                  label,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 11,
-                    fontWeight: FontWeight.w600,
-                    color: color,
+                CircleAvatar(
+                  radius: 18,
+                  backgroundColor: color.withValues(alpha: 0.12),
+                  child: Icon(icon, color: color, size: 20),
+                ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Text(
+                    label,
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                      color: color,
+                    ),
                   ),
                 ),
+                Icon(Icons.chevron_right, size: 18, color: color.withValues(alpha: 0.6)),
               ],
             ),
           ),

@@ -1,7 +1,9 @@
 import 'dart:async';
+import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:http/http.dart' as http;
 
 enum LocationServiceStatus {
   ready,
@@ -28,8 +30,29 @@ class LocationService {
   factory LocationService() => _instance;
   LocationService._internal();
 
+  Position? _cachedPosition;
+  DateTime? _cachedPositionTime;
+
+  Position? get lastKnownPosition => _cachedPosition;
+
+  void updateCachedPosition(Position pos) {
+    _cachedPosition = pos;
+    _cachedPositionTime = DateTime.now();
+  }
+
   /// Checks location services and permissions, returning current position if available.
-  Future<LocationResult> determinePosition() async {
+  Future<LocationResult> determinePosition({bool forceFresh = false}) async {
+    // Return fresh cached position instantly to prevent UI reload lag across tabs
+    if (!forceFresh &&
+        _cachedPosition != null &&
+        _cachedPositionTime != null &&
+        DateTime.now().difference(_cachedPositionTime!) < const Duration(seconds: 45)) {
+      return LocationResult(
+        status: LocationServiceStatus.ready,
+        position: _cachedPosition,
+      );
+    }
+
     try {
       final serviceEnabled = await Geolocator.isLocationServiceEnabled();
       if (!serviceEnabled) {
@@ -58,18 +81,34 @@ class LocationService {
         );
       }
 
+      // Quick check for platform last known position to eliminate delay
+      final quickLast = await Geolocator.getLastKnownPosition();
+      if (quickLast != null && _cachedPosition == null) {
+        _cachedPosition = quickLast;
+        _cachedPositionTime = DateTime.now();
+      }
+
       final position = await Geolocator.getCurrentPosition(
         locationSettings: const LocationSettings(
           accuracy: LocationAccuracy.high,
-          timeLimit: Duration(seconds: 15),
+          timeLimit: Duration(seconds: 8),
         ),
       );
+
+      _cachedPosition = position;
+      _cachedPositionTime = DateTime.now();
 
       return LocationResult(
         status: LocationServiceStatus.ready,
         position: position,
       );
     } catch (e) {
+      if (_cachedPosition != null) {
+        return LocationResult(
+          status: LocationServiceStatus.ready,
+          position: _cachedPosition,
+        );
+      }
       debugPrint('Error getting location: $e');
       return LocationResult(
         status: LocationServiceStatus.error,
@@ -78,37 +117,84 @@ class LocationService {
     }
   }
 
-  /// Live GPS position stream with distance filtering (default 5 meters)
-  Stream<Position> getPositionStream({int distanceFilter = 5}) {
+  /// Live GPS position stream with high-precision navigation accuracy
+  Stream<Position> getPositionStream({int distanceFilter = 2}) {
     return Geolocator.getPositionStream(
       locationSettings: LocationSettings(
-        accuracy: LocationAccuracy.high,
+        accuracy: LocationAccuracy.bestForNavigation,
         distanceFilter: distanceFilter,
       ),
     );
   }
 
-  /// Reverse geocoding to obtain human-readable address
+  /// Reverse geocoding to obtain detailed human-readable street address on both Web and Mobile
   Future<String> getAddressFromCoordinates(double latitude, double longitude) async {
+    final coordsText = '${latitude.toStringAsFixed(5)}, ${longitude.toStringAsFixed(5)}';
+    if (!kIsWeb) {
+      try {
+        final placemarks = await Geocoding().placemarkFromCoordinates(latitude, longitude);
+        if (placemarks.isNotEmpty) {
+          final place = placemarks.first;
+          final rawParts = <String?>[
+            place.street,
+            place.subLocality,
+            place.locality,
+            place.administrativeArea,
+          ];
+          final parts = <String>[];
+          for (final part in rawParts) {
+            final trimmed = part?.trim() ?? '';
+            if (trimmed.isNotEmpty && !parts.contains(trimmed)) {
+              parts.add(trimmed);
+            }
+          }
+          if (parts.isNotEmpty) {
+            return '${parts.join(', ')} ($coordsText)';
+          }
+        }
+      } catch (e) {
+        debugPrint('Native geocoding error: $e');
+      }
+    }
+
+    // Web & Fallback reverse geocoding via OpenStreetMap Nominatim
     try {
-      final placemarks = await placemarkFromCoordinates(latitude, longitude);
-      if (placemarks.isNotEmpty) {
-        final place = placemarks.first;
-        final parts = <String>[
-          if (place.subLocality != null && place.subLocality!.isNotEmpty) place.subLocality!,
-          if (place.locality != null && place.locality!.isNotEmpty) place.locality!,
-          if (place.administrativeArea != null && place.administrativeArea!.isNotEmpty)
-            place.administrativeArea!,
-        ];
-        if (parts.isNotEmpty) {
-          return parts.join(', ');
+      final uri = Uri.parse(
+        'https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=$latitude&lon=$longitude&zoom=18&addressdetails=1',
+      );
+      final response = await http.get(
+        uri,
+        headers: {'Accept-Language': 'en'},
+      ).timeout(const Duration(seconds: 6));
+
+      if (response.statusCode == 200) {
+        final data = jsonDecode(response.body) as Map<String, dynamic>;
+        final displayName = data['display_name'] as String?;
+        if (displayName != null && displayName.trim().isNotEmpty) {
+          return displayName;
         }
       }
-      return '${latitude.toStringAsFixed(4)}, ${longitude.toStringAsFixed(4)}';
     } catch (e) {
-      debugPrint('Geocoding error: $e');
-      return '${latitude.toStringAsFixed(4)}, ${longitude.toStringAsFixed(4)}';
+      debugPrint('Web reverse geocoding error: $e');
     }
+
+    return 'GPS: $coordsText';
+  }
+
+  /// Calculates distance in kilometers between two coordinate pairs
+  double distanceInKm(
+    double startLatitude,
+    double startLongitude,
+    double endLatitude,
+    double endLongitude,
+  ) {
+    final meters = Geolocator.distanceBetween(
+      startLatitude,
+      startLongitude,
+      endLatitude,
+      endLongitude,
+    );
+    return meters / 1000.0;
   }
 
   Future<bool> openLocationSettings() => Geolocator.openLocationSettings();

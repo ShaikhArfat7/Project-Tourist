@@ -34,11 +34,46 @@
 
   <!-- Google Maps JavaScript API for Flutter Web development -->
   <script>
-    window.isGoogleMapsLoaded = function() {
-      return typeof google !== 'undefined' && typeof google.maps !== 'undefined';
+    // Paste your Google Maps Web API key below to enable embedded maps in Chrome.
+    // When left empty, the app gracefully displays the Live GPS Web Preview card.
+    window.GOOGLE_MAPS_API_KEY = "";
+    window.gm_authFailure = function() {
+      window._googleMapsAuthFailed = true;
     };
+    window.isGoogleMapsLoaded = function() {
+      return Boolean(
+        window.GOOGLE_MAPS_API_KEY &&
+        !window._googleMapsAuthFailed &&
+        typeof google !== 'undefined' &&
+        typeof google.maps !== 'undefined'
+      );
+    };
+    if (window.GOOGLE_MAPS_API_KEY) {
+      var script = document.createElement('script');
+      script.src = 'https://maps.googleapis.com/maps/api/js?key=' + encodeURIComponent(window.GOOGLE_MAPS_API_KEY);
+      script.async = true;
+      document.head.appendChild(script);
+    }
   </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+
+  <!-- Firebase JS SDK (required for Flutter Web firebase_core, auth, and firestore) -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDb2wybopgrlPkxOU9sZWHNuWcws-9tEq0",
+      authDomain: "project-tourist-47bca.firebaseapp.com",
+      projectId: "project-tourist-47bca",
+      storageBucket: "project-tourist-47bca.firebasestorage.app",
+      messagingSenderId: "911531693651",
+      appId: "1:911531693651:web:1e7a3e33541c91eee518a6",
+      measurementId: "G-V38TTWG9G3"
+    };
+    if (typeof firebase !== 'undefined' && !firebase.apps.length) {
+      firebase.initializeApp(firebaseConfig);
+    }
+  </script>
 </head>
 <body>
   <!--

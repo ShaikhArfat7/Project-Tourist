@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -24,22 +25,30 @@ class UrlLauncherHelper {
     }
   }
 
-  static Future<void> openMapDirections(BuildContext context, String query, {double? lat, double? lng}) async {
-    Uri uri;
-    if (lat != null && lng != null) {
-      uri = Uri.parse('geo:$lat,$lng?q=$lat,$lng($query)');
-    } else {
-      uri = Uri.parse('https://www.google.com/maps/search/?api=1&query=${Uri.encodeComponent(query)}');
-    }
+  static Future<void> openMapDirections(
+    BuildContext context,
+    String query, {
+    double? lat,
+    double? lng,
+  }) async {
+    final hasCoords = lat != null && lng != null;
+    final webUri = hasCoords
+        ? Uri.parse('https://www.google.com/maps/search/?api=1&query=$lat,$lng')
+        : Uri.parse(
+            'https://www.google.com/maps/search/?api=1&query=${Uri.encodeComponent(query)}',
+          );
 
     try {
-      if (await canLaunchUrl(uri)) {
-        await launchUrl(uri, mode: LaunchMode.externalApplication);
-      } else {
-        // Fallback to web search
-        final webUri = Uri.parse('https://www.google.com/maps/search/?api=1&query=${Uri.encodeComponent(query)}');
-        await launchUrl(webUri, mode: LaunchMode.externalApplication);
+      if (!kIsWeb && hasCoords) {
+        final geoUri = Uri.parse(
+          'geo:$lat,$lng?q=$lat,$lng(${Uri.encodeComponent(query)})',
+        );
+        if (await canLaunchUrl(geoUri)) {
+          await launchUrl(geoUri, mode: LaunchMode.externalApplication);
+          return;
+        }
       }
+      await launchUrl(webUri, mode: LaunchMode.externalApplication);
     } catch (e) {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(

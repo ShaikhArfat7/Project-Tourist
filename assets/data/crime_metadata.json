@@ -1,0 +1,113 @@
+{
+  "project": "Project-Tourist Public Safety & Crime Risk Analysis",
+  "version": "1.0.0",
+  "last_updated": "2026-10-14",
+  "license_information": {
+    "license": "Government Open Data License - India (GODL)",
+    "license_url": "https://data.gov.in/government-open-data-license-india",
+    "terms_summary": "Free access, reuse, and redistribution of Indian Government public datasets with mandatory source attribution and fidelity to published records."
+  },
+  "datasets": [
+    {
+      "id": "ncrb_state_ipc_2016",
+      "title": "State/UT-wise Incidence & Rate of Total Cognizable IPC Crimes and Major Crime Heads (2014-2016)",
+      "official_source": "National Crime Records Bureau (NCRB), Ministry of Home Affairs, Government of India",
+      "publication": "Crime in India (CII) Annual Report, Table 1.1 & Table 1.2",
+      "portal": "Open Government Data Platform India (data.gov.in) & ncrb.gov.in",
+      "reporting_period": "2014 - 2016",
+      "geographic_level": "State and Union Territory Level (36 States & UTs)",
+      "population_denominator_available": true,
+      "population_source": "Mid-Year Projected Population (in Lakhs) computed by the Registrar General of India (RGI) as published in NCRB Crime in India",
+      "rate_calculation": "Crime Rate = (Incidence of IPC Crimes / Projected Population in Lakhs) = Crimes per 100,000 population",
+      "records_count": 36,
+      "attributes": [
+        "state_ut",
+        "category",
+        "projected_population_lakhs_2016",
+        "ipc_crimes_2014",
+        "ipc_crimes_2015",
+        "ipc_crimes_2016",
+        "crime_rate_2016",
+        "percentage_share_2016",
+        "violent_crimes_2016",
+        "murder_2016",
+        "assault_on_women_2016",
+        "kidnapping_and_abduction_2016",
+        "robbery_2016",
+        "burglary_2016",
+        "theft_2016"
+      ],
+      "preprocessing_notes": "Compiled directly from official NCRB tables. State names normalized for UI matching (e.g. 'Jammu & Kashmir' retains historical state status as of 2016 reporting period). Missing historical entries are explicitly preserved as null or 0."
+    },
+    {
+      "id": "maharashtra_district_ipc_2014",
+      "title": "Maharashtra District and Police Commissionerate-wise Incidence of Cognizable IPC Crimes",
+      "official_source": "State Crime Records Bureau (SCRB), Maharashtra State CID & NCRB Crime in India",
+      "publication": "Crime in Maharashtra / NCRB District-wise Crime in India Table 1.8",
+      "portal": "Maharashtra Police (mahapolice.gov.in) & NCRB",
+      "reporting_period": "2014",
+      "geographic_level": "District & Police Commissionerate Level (43 Maharashtra Police Units)",
+      "population_denominator_available": false,
+      "population_source": "Not available for police jurisdiction boundaries (Commissionerates vs Rural District Units)",
+      "rate_calculation": "Unavailable. Rate is intentionally NOT calculated because reliable population denominators are not delineated for separate City Commissionerates vs Rural jurisdictions.",
+      "records_count": 43,
+      "attributes": [
+        "district",
+        "unit_type",
+        "total_ipc_crimes",
+        "murder",
+        "attempt_to_murder",
+        "rape_and_assault_on_women",
+        "kidnapping_and_abduction",
+        "dacoity_and_robbery",
+        "burglary",
+        "theft",
+        "cheating_and_fraud"
+      ],
+      "preprocessing_notes": "Covers all 43 administrative police units in Maharashtra (10 Commissionerates including Mumbai, Navi Mumbai, Thane City, Pune City, Nagpur City, Nashik City; 31 Rural Districts including Raigad/Panvel, Pune Rural, Satara, Kolhapur; and 2 Railway Police units). Preserves exact reported incidence counts without artificial interpolation or manufactured rates."
+    },
+    {
+      "id": "maharashtra_cid_rates_2022_2023",
+      "title": "Maharashtra State CID Crime Head-wise & District-wise Crime Rates and Incidence (2022 & 2023)",
+      "official_source": "State Crime Investigation Department (CID), Maharashtra State",
+      "publication": "Crime in Maharashtra (2022 & 2023) Official Annual Reports",
+      "portal": "Maharashtra State CID & mahapolice.gov.in",
+      "reporting_period": "2022 - 2023",
+      "geographic_level": "District & Police Commissionerate Level (49 Maharashtra Police Units / 36 Revenue District Groups)",
+      "population_denominator_available": true,
+      "population_source": "Mid-Year Estimated Population in Lakhs computed by Director of Economics and Statistics / Maharashtra CID",
+      "rate_calculation": "Crime Rate = (Incidence of Crimes / Mid-Year Population in Lakhs) = Crimes per 100,000 population",
+      "records_count": 76,
+      "attributes": [
+        "district",
+        "unit_type",
+        "region",
+        "headquarters",
+        "reporting_year",
+        "total_ipc_crimes",
+        "ipc_crime_rate",
+        "total_cognizable_crimes",
+        "total_crime_rate",
+        "crimes_against_women",
+        "crimes_against_women_rate",
+        "population_lakhs",
+        "murder",
+        "attempt_to_murder",
+        "rape_and_assault_on_women",
+        "kidnapping_and_abduction",
+        "dacoity_and_robbery",
+        "burglary",
+        "theft",
+        "cheating_and_fraud",
+        "crime_rate",
+        "police_units_included",
+        "note"
+      ],
+      "preprocessing_notes": "Compiled from official Maharashtra CID Crime Head-Wise and District Rates 2022-2023 reports. Provides comprehensive breakdowns for violent crime, women's safety, and property crimes with verified official rates per 100,000 population."
+    }
+  ],
+  "scientific_disclaimers": {
+    "weather_correlation": "Weather information is supplied solely as contextual environmental awareness for tourist physical safety (e.g. rain, heatwaves, extreme winds). The project makes NO CLAIM that weather predicts or causes crime.",
+    "rate_integrity": "Crime rates are presented only where an official population denominator was formally published. No district crime rates are estimated or manufactured from state totals."
+  }
+}

@@ -1,16 +1,27 @@
 import 'dart:async';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_map/flutter_map.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:latlong2/latlong.dart';
+import '../../core/services/destination_service.dart';
 import '../../core/services/location_service.dart';
+import '../../core/services/notification_service.dart';
+import '../../core/services/safety_zone_service.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/utils/url_launcher_helper.dart';
-import '../../core/utils/web_map_checker.dart';
+import '../dashboard/widgets/emergency_alert_modal.dart';
+import '../destinations/destinations_sheet.dart';
 import 'widgets/info_tile.dart';
 
 class TrackingTab extends StatefulWidget {
-  const TrackingTab({super.key});
+  final TouristDestination? browsedDestination;
+  final ValueChanged<TouristDestination?>? onDestinationChanged;
+
+  const TrackingTab({
+    super.key,
+    this.browsedDestination,
+    this.onDestinationChanged,
+  });
 
   @override
   State<TrackingTab> createState() => _TrackingTabState();
@@ -18,12 +29,14 @@ class TrackingTab extends StatefulWidget {
 
 class _TrackingTabState extends State<TrackingTab> {
   final LocationService _locationService = LocationService();
+  final SafetyZoneService _safetyZoneService = SafetyZoneService();
+  final MapController _mapController = MapController();
 
-  GoogleMapController? _mapController;
   StreamSubscription<Position>? _positionStreamSubscription;
 
   LocationServiceStatus _status = LocationServiceStatus.ready;
   bool _isLoading = true;
+  bool _mapReady = false;
   String? _statusMessage;
 
   Position? _currentPosition;
@@ -31,20 +44,48 @@ class _TrackingTabState extends State<TrackingTab> {
   String _speedText = '0 km/h';
   String _accuracyText = '±--m';
   String _geofenceStatus = 'Detecting...';
-
-  final Set<Marker> _markers = {};
+  SafetyEvaluationResult? _safetyEval;
 
   @override
   void initState() {
     super.initState();
+    _safetyZoneService.addListener(_onZonesChanged);
     _initializeLocation();
   }
 
   @override
+  void didUpdateWidget(covariant TrackingTab oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.browsedDestination?.id != oldWidget.browsedDestination?.id &&
+        _mapReady) {
+      if (widget.browsedDestination != null) {
+        _animateCameraToPosition(
+          LatLng(
+            widget.browsedDestination!.latitude,
+            widget.browsedDestination!.longitude,
+          ),
+          zoom: 13.5,
+        );
+      } else if (_currentPosition != null) {
+        _animateCameraToPosition(
+          LatLng(_currentPosition!.latitude, _currentPosition!.longitude),
+        );
+      }
+    }
+  }
+
+  @override
   void dispose() {
+    _safetyZoneService.removeListener(_onZonesChanged);
     _positionStreamSubscription?.cancel();
-    _mapController?.dispose();
+    _mapController.dispose();
     super.dispose();
+  }
+
+  void _onZonesChanged() {
+    if (_currentPosition != null) {
+      _evaluateGeofence(_currentPosition!);
+    }
   }
 
   Future<void> _initializeLocation() async {
@@ -53,6 +94,7 @@ class _TrackingTabState extends State<TrackingTab> {
       _statusMessage = 'Connecting to GPS satellites...';
     });
 
+    await _safetyZoneService.loadZones();
     final result = await _locationService.determinePosition();
 
     if (!mounted) return;
@@ -62,20 +104,18 @@ class _TrackingTabState extends State<TrackingTab> {
         _isLoading = false;
         _status = result.status;
         _statusMessage = result.errorMessage ?? 'Unable to determine location.';
-        _geofenceStatus = 'Offline';
+        _geofenceStatus = 'Unavailable';
       });
       return;
     }
 
     final pos = result.position!;
-    _updatePositionData(pos);
-
     setState(() {
       _isLoading = false;
       _status = LocationServiceStatus.ready;
     });
 
-    // Start real-time position updates
+    _updatePositionData(pos);
     _startPositionStreaming();
   }
 
@@ -95,94 +135,271 @@ class _TrackingTabState extends State<TrackingTab> {
   void _updatePositionData(Position pos) {
     _currentPosition = pos;
 
-    // Calculate speed in km/h
     final kmh = pos.speed < 0 ? 0.0 : pos.speed * 3.6;
     _speedText = '${kmh.toStringAsFixed(0)} km/h';
     _accuracyText = '±${pos.accuracy.toStringAsFixed(0)}m';
-    _geofenceStatus = 'Active (Safe)';
 
     final latLng = LatLng(pos.latitude, pos.longitude);
-
-    // Update map marker
-    _markers
-      ..clear()
-      ..add(
-        Marker(
-          markerId: const MarkerId('current_location_marker'),
-          position: latLng,
-          infoWindow: const InfoWindow(
-            title: 'Your Location',
-            snippet: 'Tourist Safety Active',
-          ),
-          icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueOrange),
-        ),
-      );
-
     setState(() {});
 
-    // Animate camera to follow on map
-    _animateCameraToPosition(latLng);
+    if (_mapReady && widget.browsedDestination == null) {
+      _animateCameraToPosition(latLng);
+    }
 
-    // Reverse geocode to resolve address
     _locationService.getAddressFromCoordinates(pos.latitude, pos.longitude).then((addr) {
       if (mounted) {
         setState(() => _address = addr);
       }
     });
+
+    _evaluateGeofence(pos);
   }
 
-  void _animateCameraToPosition(LatLng latLng) {
-    _mapController?.animateCamera(
-      CameraUpdate.newCameraPosition(
-        CameraPosition(
-          target: latLng,
-          zoom: 16.5,
-          tilt: 0,
+  Future<void> _evaluateGeofence(Position pos) async {
+    final eval = await _safetyZoneService.evaluateLocation(
+      pos.latitude,
+      pos.longitude,
+      fetchWeather: false,
+    );
+    if (!mounted) return;
+    setState(() {
+      _safetyEval = eval;
+      _geofenceStatus = eval.overallTier.badgeLabel;
+    });
+
+    for (final zone in eval.activeZones) {
+      if (!_safetyZoneService.hasAcknowledgedZone(zone.id)) {
+        _safetyZoneService.markZoneAcknowledged(zone.id);
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (!mounted) return;
+          if (zone.riskTier == RiskTier.highRisk) {
+            _showHighRiskModal(zone);
+          } else {
+            _showCautionModal(zone);
+          }
+        });
+        break;
+      }
+    }
+  }
+
+  void _showHighRiskModal(HazardZone zone) {
+    EmergencyAlertModal.show(
+      context,
+      zone: zone,
+    );
+  }
+
+  void _showCautionModal(HazardZone zone) {
+    NotificationService().showMediumRiskNotification(
+      title: '⚠️ CAUTION ADVISORY: ${zone.name}',
+      body: zone.warningMessage,
+    );
+    showDialog(
+      context: context,
+      barrierDismissible: true,
+      builder: (ctx) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        title: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(6),
+              decoration: BoxDecoration(
+                color: AppTheme.cautionAmber.withValues(alpha: 0.15),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: const Icon(Icons.warning_amber_rounded, color: AppTheme.cautionAmber, size: 28),
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'CAUTION / MODERATE ALERT',
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 1.1,
+                      color: AppTheme.cautionAmber,
+                    ),
+                  ),
+                  Text(
+                    zone.name,
+                    style: const TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                      color: AppTheme.textDark,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+              decoration: BoxDecoration(
+                color: zone.isDemoData
+                    ? const Color(0xFFFEF3C7)
+                    : AppTheme.cautionAmber.withValues(alpha: 0.1),
+                borderRadius: BorderRadius.circular(6),
+              ),
+              child: Text(
+                zone.categoryBadgeLabel,
+                style: TextStyle(
+                  fontSize: 10,
+                  fontWeight: FontWeight.bold,
+                  color: zone.isDemoData
+                      ? const Color(0xFF92400E)
+                      : AppTheme.cautionAmber,
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            Text(
+              zone.warningMessage,
+              style: const TextStyle(fontSize: 13, color: AppTheme.textDark, height: 1.35),
+            ),
+            const SizedBox(height: 10),
+            Container(
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: AppTheme.surfaceBg,
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: AppTheme.cautionAmber.withValues(alpha: 0.3)),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Cautionary Tourist Guidelines:',
+                    style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: AppTheme.cautionAmber),
+                  ),
+                  const SizedBox(height: 3),
+                  Text(
+                    zone.recommendedAction,
+                    style: const TextStyle(fontSize: 12, color: AppTheme.textDark),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('I Understand'),
+          ),
+          ElevatedButton.icon(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppTheme.teal,
+              foregroundColor: Colors.white,
+            ),
+            onPressed: () {
+              Navigator.pop(ctx);
+              UrlLauncherHelper.callNumber(context, '1363');
+            },
+            icon: const Icon(Icons.support_agent, size: 16),
+            label: const Text('Tourist Helpline 1363'),
+          ),
+        ],
       ),
     );
   }
 
-  void _onMapCreated(GoogleMapController controller) {
-    _mapController = controller;
-    if (_currentPosition != null) {
-      _animateCameraToPosition(
-        LatLng(_currentPosition!.latitude, _currentPosition!.longitude),
-      );
+  void _animateCameraToPosition(LatLng latLng, {double zoom = 15.5}) {
+    if (!_mapReady) return;
+    try {
+      _mapController.move(latLng, zoom);
+    } catch (e) {
+      debugPrint('Map move error: $e');
     }
+  }
+
+  void _openDestinationPicker() {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (_) => DestinationsSheet(
+        currentSelection: widget.browsedDestination,
+        onSelectDestination: (dest) {
+          widget.onDestinationChanged?.call(dest);
+        },
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
+    final dest = widget.browsedDestination;
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Live Tracking'),
+        title: const Text('Live Safety Map'),
         actions: [
           IconButton(
+            icon: const Icon(Icons.travel_explore),
+            tooltip: 'Browse Destination on Map',
+            onPressed: _openDestinationPicker,
+          ),
+          IconButton(
             icon: const Icon(Icons.refresh),
-            tooltip: 'Refresh Location',
+            tooltip: 'Refresh GPS Location',
             onPressed: _initializeLocation,
           ),
         ],
       ),
       body: Column(
         children: [
-          // Upper Section (flex: 3): Interactive Map or Graceful State Fallback
+          if (dest != null)
+            Container(
+              width: double.infinity,
+              color: const Color(0xFFFEF3C7),
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+              child: Row(
+                children: [
+                  const Icon(Icons.travel_explore, size: 18, color: Color(0xFF92400E)),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      'Viewing Destination: ${dest.name}, ${dest.state} (Not your live GPS)',
+                      style: const TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600,
+                        color: Color(0xFF92400E),
+                      ),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () => widget.onDestinationChanged?.call(null),
+                    child: const Text('Return to Live GPS'),
+                  ),
+                ],
+              ),
+            ),
+
+          // Upper Section: Interactive Map
           Expanded(
             flex: 3,
             child: _buildMapSection(),
           ),
 
-          // Lower Section (flex: 2): Telemetry Panel
+          // Lower Section: Telemetry Panel
           Expanded(
             flex: 2,
-            child: Padding(
+            child: SingleChildScrollView(
               padding: const EdgeInsets.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
-                    'Your Location',
+                    'Your Live GPS Telemetry',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 15,
@@ -200,9 +417,9 @@ class _TrackingTabState extends State<TrackingTab> {
                   Row(
                     children: [
                       InfoTile(
-                        label: 'Geo-Fence',
+                        label: 'Risk Tier',
                         value: _geofenceStatus,
-                        icon: Icons.fence,
+                        icon: Icons.shield_outlined,
                       ),
                       const SizedBox(width: 12),
                       InfoTile(
@@ -223,7 +440,7 @@ class _TrackingTabState extends State<TrackingTab> {
                     width: double.infinity,
                     child: ElevatedButton.icon(
                       icon: const Icon(Icons.share_location),
-                      label: const Text('Share Live Location'),
+                      label: const Text('Share Live GPS Coordinates'),
                       onPressed: _currentPosition == null
                           ? null
                           : () {
@@ -265,12 +482,12 @@ class _TrackingTabState extends State<TrackingTab> {
   Widget _buildMapSection() {
     if (_isLoading) {
       return Container(
-        color: const Color(0xFFE8D5C4),
+        color: AppTheme.surfaceBg,
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const CircularProgressIndicator(color: AppTheme.orange),
+              const CircularProgressIndicator(color: AppTheme.teal),
               const SizedBox(height: 16),
               Text(
                 _statusMessage ?? 'Detecting GPS coordinates...',
@@ -285,97 +502,174 @@ class _TrackingTabState extends State<TrackingTab> {
       );
     }
 
-    if (_status == LocationServiceStatus.serviceDisabled) {
+    if ((_status != LocationServiceStatus.ready || _currentPosition == null) &&
+        widget.browsedDestination == null) {
       return _buildNoticeCard(
         icon: Icons.location_off_rounded,
-        title: 'Location Services Disabled',
-        description:
-            'Please turn on your device GPS location to view your real-time tracking map and safety perimeter.',
-        buttonLabel: 'Enable Location',
-        onPressed: () async {
-          await _locationService.openLocationSettings();
-          _initializeLocation();
-        },
-      );
-    }
-
-    if (_status == LocationServiceStatus.permissionDenied) {
-      return _buildNoticeCard(
-        icon: Icons.location_searching_rounded,
-        title: 'Location Permission Needed',
-        description:
-            'Tourist Safety Monitor requires location permissions to display live tracking and monitor safe zones.',
-        buttonLabel: 'Grant Permission',
+        title: 'Location Access Required',
+        description: _statusMessage ??
+            'Enable device GPS to view your live safety map, or browse a tourist destination.',
+        buttonLabel: 'Retry Live GPS',
         onPressed: _initializeLocation,
       );
     }
 
-    if (_status == LocationServiceStatus.permissionDeniedForever) {
-      return _buildNoticeCard(
-        icon: Icons.lock_outline_rounded,
-        title: 'Permission Permanently Denied',
-        description:
-            'Location access is blocked in Android settings. Please enable location permissions in App Info.',
-        buttonLabel: 'Open App Settings',
-        onPressed: () async {
-          await _locationService.openAppSettings();
-          _initializeLocation();
-        },
-      );
-    }
+    final liveLatLng = _currentPosition != null
+        ? LatLng(_currentPosition!.latitude, _currentPosition!.longitude)
+        : null;
+    final dest = widget.browsedDestination;
+    final initialTarget = dest != null
+        ? LatLng(dest.latitude, dest.longitude)
+        : (liveLatLng ?? const LatLng(19.0760, 72.8777));
 
-    if (_currentPosition == null) {
-      return _buildNoticeCard(
-        icon: Icons.gps_off_rounded,
-        title: 'No GPS Fix',
-        description: 'Unable to acquire satellite coordinates. Please retry.',
-        buttonLabel: 'Retry GPS',
-        onPressed: _initializeLocation,
-      );
-    }
-
-    // Graceful Web Handling:
-    // If running in Chrome and Google Maps JS SDK is not yet loaded or initialized,
-    // render an interactive Web preview card to prevent browser crashes.
-    if (kIsWeb && !isGoogleMapsWebReady()) {
-      return _buildWebFallbackCard();
-    }
-
-    // Real Google Map
-    final initialTarget = LatLng(
-      _currentPosition!.latitude,
-      _currentPosition!.longitude,
-    );
+    final zones = _safetyZoneService.allConfiguredZones;
 
     return Stack(
       children: [
-        GoogleMap(
-          initialCameraPosition: CameraPosition(
-            target: initialTarget,
-            zoom: 16.5,
+        FlutterMap(
+          mapController: _mapController,
+          options: MapOptions(
+            initialCenter: initialTarget,
+            initialZoom: dest != null ? 13.5 : 15.5,
+            onMapReady: () {
+              _mapReady = true;
+              _animateCameraToPosition(initialTarget, zoom: dest != null ? 13.5 : 15.5);
+            },
           ),
-          onMapCreated: _onMapCreated,
-          myLocationEnabled: true,
-          myLocationButtonEnabled: false,
-          zoomControlsEnabled: false,
-          zoomGesturesEnabled: true,
-          scrollGesturesEnabled: true,
-          rotateGesturesEnabled: true,
-          tiltGesturesEnabled: true,
-          markers: _markers,
+          children: [
+            TileLayer(
+              urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+              userAgentPackageName: 'com.tourist_safety_app',
+            ),
+            CircleLayer(
+              circles: [
+                if (liveLatLng != null)
+                  CircleMarker(
+                    point: liveLatLng,
+                    radius: 120,
+                    useRadiusInMeter: true,
+                    color: AppTheme.teal.withValues(alpha: 0.14),
+                    borderColor: AppTheme.teal,
+                    borderStrokeWidth: 2,
+                  ),
+                ...zones.map((z) {
+                  final c = z.riskTier == RiskTier.highRisk
+                      ? AppTheme.highRiskRed
+                      : AppTheme.cautionAmber;
+                  return CircleMarker(
+                    point: LatLng(z.latitude, z.longitude),
+                    radius: z.radiusMeters,
+                    useRadiusInMeter: true,
+                    color: c.withValues(alpha: 0.18),
+                    borderColor: c,
+                    borderStrokeWidth: 2,
+                  );
+                }),
+              ],
+            ),
+            MarkerLayer(
+              markers: [
+                if (liveLatLng != null)
+                  Marker(
+                    point: liveLatLng,
+                    width: 56,
+                    height: 56,
+                    child: Container(
+                      padding: const EdgeInsets.all(6),
+                      decoration: BoxDecoration(
+                        color: AppTheme.teal,
+                        shape: BoxShape.circle,
+                        border: Border.all(color: Colors.white, width: 2.5),
+                      ),
+                      child: const Icon(
+                        Icons.person_pin_circle,
+                        color: Colors.white,
+                        size: 22,
+                      ),
+                    ),
+                  ),
+                if (dest != null)
+                  Marker(
+                    point: LatLng(dest.latitude, dest.longitude),
+                    width: 52,
+                    height: 52,
+                    child: Container(
+                      padding: const EdgeInsets.all(6),
+                      decoration: BoxDecoration(
+                        color: AppTheme.cautionAmber,
+                        shape: BoxShape.circle,
+                        border: Border.all(color: Colors.white, width: 2.5),
+                      ),
+                      child: const Icon(
+                        Icons.travel_explore,
+                        color: Colors.white,
+                        size: 22,
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+          ],
         ),
-        // Floating Recenter Button
+        Positioned(
+          top: 12,
+          left: 12,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            decoration: BoxDecoration(
+              color: Colors.white.withValues(alpha: 0.92),
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(
+                  Icons.shield_outlined,
+                  color: _safetyEval?.overallTier == RiskTier.highRisk
+                      ? AppTheme.highRiskRed
+                      : AppTheme.teal,
+                  size: 16,
+                ),
+                const SizedBox(width: 6),
+                Text(
+                  'Risk Tier: $_geofenceStatus',
+                  style: const TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                    color: AppTheme.textDark,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Positioned(
+          bottom: 8,
+          left: 12,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+            decoration: BoxDecoration(
+              color: Colors.white.withValues(alpha: 0.85),
+              borderRadius: BorderRadius.circular(4),
+            ),
+            child: const Text(
+              '© OpenStreetMap contributors (ODbL)',
+              style: TextStyle(fontSize: 10, color: AppTheme.muted),
+            ),
+          ),
+        ),
         Positioned(
           bottom: 16,
           right: 16,
           child: FloatingActionButton.small(
             heroTag: 'tracking_recenter_fab',
             backgroundColor: Colors.white,
-            foregroundColor: AppTheme.orangeDark,
+            foregroundColor: AppTheme.tealDark,
             elevation: 3,
-            tooltip: 'Center on my location',
+            tooltip: 'Center on my live GPS location',
             onPressed: () {
               if (_currentPosition != null) {
+                widget.onDestinationChanged?.call(null);
                 _animateCameraToPosition(
                   LatLng(_currentPosition!.latitude, _currentPosition!.longitude),
                 );
@@ -388,79 +682,6 @@ class _TrackingTabState extends State<TrackingTab> {
     );
   }
 
-  Widget _buildWebFallbackCard() {
-    final lat = _currentPosition!.latitude;
-    final lng = _currentPosition!.longitude;
-
-    return Container(
-      width: double.infinity,
-      color: const Color(0xFFE8D5C4),
-      padding: const EdgeInsets.all(24),
-      child: Center(
-        child: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Icon(Icons.map_outlined, size: 52, color: AppTheme.orange),
-              const SizedBox(height: 12),
-              const Text(
-                'Live GPS Active (Web Preview)',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  color: AppTheme.textDark,
-                ),
-              ),
-              const SizedBox(height: 8),
-              Text(
-                'Real coordinates: ${lat.toStringAsFixed(5)}, ${lng.toStringAsFixed(5)}\n\n'
-                '• Android is your primary target and runs native Google Maps.\n'
-                '• To view embedded maps in Chrome, add your Google Maps Web API key to web/index.html.',
-                textAlign: TextAlign.center,
-                style: const TextStyle(fontSize: 12, color: AppTheme.muted, height: 1.4),
-              ),
-              const SizedBox(height: 18),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  ElevatedButton.icon(
-                    onPressed: () {
-                      UrlLauncherHelper.openMapDirections(
-                        context,
-                        _address,
-                        lat: lat,
-                        lng: lng,
-                      );
-                    },
-                    icon: const Icon(Icons.open_in_new, size: 18),
-                    label: const Text('Open in Google Maps'),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppTheme.orange,
-                      foregroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                    ),
-                  ),
-                  const SizedBox(width: 12),
-                  OutlinedButton.icon(
-                    onPressed: _initializeLocation,
-                    icon: const Icon(Icons.refresh, size: 18),
-                    label: const Text('Retry'),
-                    style: OutlinedButton.styleFrom(
-                      foregroundColor: AppTheme.orangeDark,
-                      side: const BorderSide(color: AppTheme.orange),
-                      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
   Widget _buildNoticeCard({
     required IconData icon,
     required String title,
@@ -470,14 +691,14 @@ class _TrackingTabState extends State<TrackingTab> {
   }) {
     return Container(
       width: double.infinity,
-      color: const Color(0xFFE8D5C4),
+      color: AppTheme.surfaceBg,
       padding: const EdgeInsets.all(24),
       child: Center(
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(icon, size: 52, color: AppTheme.orange),
+              Icon(icon, size: 52, color: AppTheme.teal),
               const SizedBox(height: 12),
               Text(
                 title,
@@ -495,15 +716,22 @@ class _TrackingTabState extends State<TrackingTab> {
                 style: const TextStyle(fontSize: 12, color: AppTheme.muted),
               ),
               const SizedBox(height: 18),
-              ElevatedButton.icon(
-                onPressed: onPressed,
-                icon: const Icon(Icons.check_circle_outline, size: 18),
-                label: Text(buttonLabel),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppTheme.orange,
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                ),
+              Wrap(
+                spacing: 10,
+                runSpacing: 10,
+                alignment: WrapAlignment.center,
+                children: [
+                  ElevatedButton.icon(
+                    onPressed: onPressed,
+                    icon: const Icon(Icons.my_location, size: 18),
+                    label: Text(buttonLabel),
+                  ),
+                  OutlinedButton.icon(
+                    onPressed: _openDestinationPicker,
+                    icon: const Icon(Icons.travel_explore, size: 18),
+                    label: const Text('Browse Destination'),
+                  ),
+                ],
               ),
             ],
           ),
